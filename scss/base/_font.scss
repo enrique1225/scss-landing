@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Barlow;
+    src: local(Barlow-Light), url(/path/to/Barlow-Light.woff2) format("woff2"), url(/path/to/Barlow-Light.woff) format("woff"), url(/path/to/Barlow-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: local(Barlow-Regular), url(/path/to/Barlow-Regular.woff2) format("woff2"), url(/path/to/Barlow-Regular.woff) format("woff"), url(/path/to/Barlow-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: local(Barlow-Medium), url(/path/to/Barlow-Medium.woff2) format("woff2"), url(/path/to/Barlow-Medium.woff) format("woff"), url(/path/to/Barlow-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: local(Barlow-SemiBold), url(/path/to/Barlow-SemiBold.woff2) format("woff2"), url(/path/to/Barlow-SemiBold.woff) format("woff"), url(/path/to/Barlow-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
