@@ -1,0 +1,49 @@
+.navbar {
+    background-color: $dark-blue-grey;
+    .dropdown-toggle {
+        &::after {
+            border: none;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+    }
+    #logo {
+        padding: 0 2rem;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            margin-right: 30px;
+            padding: 5px 0;
+            color: $white;
+            &:hover {
+                color: #06BBCC;
+            }
+            &:last-child {
+                margin-right: 2rem;
+            }
+            .signin-btn {
+                border-radius: 15px;
+                border: 1px solid $pale-purple;
+                color: $white;
+                padding: 0.375rem 2.313rem 0.438rem 2.25rem;
+            }
+        }
+        .nav-link.active {
+            color: #06BBCC;
+        }
+    }
+    .navbar-brand {
+        height: 6.25rem;
+    }
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
