@@ -10,14 +10,10 @@
 }
 
 .carousel-open {
-    &:checked {
-        + {
-            .carousel-item {
-                position: static;
-                opacity: 100;
-                display: block;
-            }
-        }
+    &:checked+.carousel-item {
+        position: static;
+        opacity: 100;
+        display: block;
     }
 }
 
@@ -29,8 +25,8 @@
     img {
         display: block;
         height: auto;
-        max-width: 100%;
         width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -45,9 +41,6 @@
     line-height: 35px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
@@ -67,22 +60,14 @@
 }
 
 #carousel-1 {
-    &:checked {
-        ~ {
-            .control-1 {
-                display: block;
-                ~ {
-                    .carousel-indicators {
-                        li {
-                            &:nth-child(1) {
-                                .carousel-bullet {
-                                    color: #428bca;
-                                    width: 50px;
-                                    height: 5px;
-                                }
-                            }
-                        }
-                    }
+    &:checked~.control-1 {
+        display: block;
+    }
+    &:checked~.control-1~.carousel-indicators {
+        li {
+            &:nth-child(1) {
+                .carousel-bullet {
+                    border: solid 1px $pale-purple;
                 }
             }
         }
@@ -90,22 +75,14 @@
 }
 
 #carousel-2 {
-    &:checked {
-        ~ {
-            .control-2 {
-                display: block;
-                ~ {
-                    .carousel-indicators {
-                        li {
-                            &:nth-child(2) {
-                                .carousel-bullet {
-                                    color: #428bca;
-                                    width: 50px;
-                                    height: 5px;
-                                }
-                            }
-                        }
-                    }
+    &:checked~.control-2 {
+        display: block;
+    }
+    &:checked~.control-2~.carousel-indicators {
+        li {
+            &:nth-child(2) {
+                .carousel-bullet {
+                    border: solid 1px $pale-purple;
                 }
             }
         }
@@ -113,22 +90,29 @@
 }
 
 #carousel-3 {
-    &:checked {
-        ~ {
-            .control-3 {
-                display: block;
-                ~ {
-                    .carousel-indicators {
-                        li {
-                            &:nth-child(3) {
-                                .carousel-bullet {
-                                    color: #428bca;
-                                    width: 50px;
-                                    height: 5px;
-                                }
-                            }
-                        }
-                    }
+    &:checked~.control-3 {
+        display: block;
+    }
+    &:checked~.control-3~.carousel-indicators {
+        li {
+            &:nth-child(3) {
+                .carousel-bullet {
+                    border: solid 1px $pale-purple;
+                }
+            }
+        }
+    }
+}
+
+#carousel-4 {
+    &:checked~.control-4 {
+        display: block;
+    }
+    &:checked~.control-4~.carousel-indicators {
+        li {
+            &:nth-child(4) {
+                .carousel-bullet {
+                    border: solid 1px $pale-purple;
                 }
             }
         }
@@ -147,29 +131,17 @@
     z-index: 10;
     li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0;
     }
 }
 
 .carousel-bullet {
-    color: #fff;
     cursor: pointer;
-    display: block;
-    font-size: 35px;
+    width: 2.5rem;
+    height: 0.063rem;
+    margin: 0 0.313rem 0 0.375rem;
+    border: solid 1px $white;
     &:hover {
-        color: #aaaaaa;
+        border: solid 1px $pale-purple;
     }
-}
-
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }

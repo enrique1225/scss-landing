@@ -106,3 +106,6 @@
     });
 
 })(jQuery);
+
+
+$("category_bnldy")
