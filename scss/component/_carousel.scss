@@ -1,6 +1,6 @@
-.carousel {
+.carousel-container {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    padding: 0 2rem;
 }
 
 .carousel-inner {
@@ -28,27 +28,30 @@
         width: 100%;
         max-width: 100%;
     }
+    .for {
+        font-family: Barlow;
+        font-size: 1.875rem;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.83px;
+        margin: 0;
+        color: $pale-purple;
+    }
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
-    color: #fff;
+    color: $pale-purple;
     cursor: pointer;
     display: none;
     font-size: 40px;
-    height: 40px;
-    line-height: 35px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
-    width: 40px;
     z-index: 10;
-    &:hover {
-        background: rgba(0, 0, 0, 0.8);
-        color: #aaaaaa;
-    }
 }
 
 .carousel-control.prev {

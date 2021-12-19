@@ -1,6 +1,6 @@
 @font-face {
     font-family: Barlow;
-    src: local(Barlow-Light), url(/path/to/Barlow-Light.woff2) format("woff2"), url(/path/to/Barlow-Light.woff) format("woff"), url(/path/to/Barlow-Light.ttf) format("truetype");
+    src: local(Barlow-Light), url("../font/Barlow-Light.ttf");
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Barlow;
-    src: local(Barlow-Regular), url(/path/to/Barlow-Regular.woff2) format("woff2"), url(/path/to/Barlow-Regular.woff) format("woff"), url(/path/to/Barlow-Regular.ttf) format("truetype");
+    src: local(Barlow-Regular), url("../font/Barlow-Regular.ttf");
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Barlow;
-    src: local(Barlow-Medium), url(/path/to/Barlow-Medium.woff2) format("woff2"), url(/path/to/Barlow-Medium.woff) format("woff"), url(/path/to/Barlow-Medium.ttf) format("truetype");
+    src: local(Barlow-Medium), url("../font/Barlow-Medium.ttf");
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: Barlow;
-    src: local(Barlow-SemiBold), url(/path/to/Barlow-SemiBold.woff2) format("woff2"), url(/path/to/Barlow-SemiBold.woff) format("woff"), url(/path/to/Barlow-SemiBold.ttf) format("truetype");
+    src: local(Barlow-SemiBold), url("../font/Barlow-SemiBold.ttf");
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;

@@ -22,7 +22,7 @@
             padding: 5px 0;
             color: $white;
             &:hover {
-                color: #06BBCC;
+                color: $pale-purple;
             }
             &:last-child {
                 margin-right: 2rem;
@@ -35,7 +35,7 @@
             }
         }
         .nav-link.active {
-            color: #06BBCC;
+            color: $pale-purple;
         }
     }
     .navbar-brand {

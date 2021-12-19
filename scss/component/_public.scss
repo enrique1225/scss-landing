@@ -1,11 +1,3 @@
-.fw-medium {
-    font-weight: 600 !important;
-}
-
-.fw-semi-bold {
-    font-weight: 700 !important;
-}
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -27,51 +19,26 @@
     opacity: 1;
 }
 
-.btn {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    transition: .5s;
+.btn.purpleBtn {
+    min-width: 11.563rem;
+    padding: 0.688rem 2rem 0.938rem;
+    border-radius: 25px;
+    background-color: $pale-purple;
+    &:hover {
+        color: $white;
+    }
 }
 
-.btn.btn-primary {
-    color: #FFFFFF;
-}
-
-.btn.btn-secondary {
-    color: #FFFFFF;
-}
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
+.btn.transparentBtn {
+    min-width: 11.563rem;
+    padding: 0.688rem 2rem 0.938rem;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid $pale-purple;
+    &:hover {
+        color: $white;
+        background-color: $pale-purple;
+    }
 }
 
 .header-carousel {
@@ -280,66 +247,5 @@
     .owl-dot.active {
         background: #06BBCC;
         border-color: #06BBCC;
-    }
-}
-
-.footer {
-    .btn.btn-social {
-        margin-right: 5px;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #F0FBFC;
-        font-weight: normal;
-        border: 1px solid #FFFFFF;
-        border-radius: 35px;
-        transition: .3s;
-        &:hover {
-            color: #06BBCC;
-        }
-    }
-    .btn.btn-link {
-        display: block;
-        margin-bottom: 5px;
-        padding: 0;
-        text-align: left;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: normal;
-        text-transform: capitalize;
-        transition: .3s;
-        &::before {
-            position: relative;
-            content: "\f105";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 10px;
-        }
-        &:hover {
-            letter-spacing: 1px;
-            box-shadow: none;
-        }
-    }
-    .copyright {
-        padding: 25px 0;
-        font-size: 15px;
-        border-top: 1px solid rgba(256, 256, 256, .1);
-        a {
-            color: #F0FBFC;
-        }
-    }
-    .footer-menu {
-        a {
-            margin-right: 15px;
-            padding-right: 15px;
-            border-right: 1px solid rgba(255, 255, 255, .1);
-            &:last-child {
-                margin-right: 0;
-                padding-right: 0;
-                border-right: none;
-            }
-        }
     }
 }

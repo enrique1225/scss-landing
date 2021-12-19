@@ -1,6 +1,5 @@
 //... Base
-@import 'base/general',
-'base/font',
+@import 'base/font',
 'base/color',
 'base/text',
 'base/responsive';
@@ -8,4 +7,5 @@
 @import 'layout/header',
 'layout/footer';
 //... Component
-@import 'component/carousel';
+@import 'component/public',
+'component/carousel';
