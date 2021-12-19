@@ -133,93 +133,26 @@
     }
 }
 
-.category {
-    img {
-        transition: .5s;
+.nav-pills .nav-link {
+    background: none;
+    color: $purpley-grey;
+    margin: 0 10px;
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $pale-purple;
     }
-    a {
-        &:hover {
-            img {
-                transform: scale(1.1);
-            }
-        }
-    }
-}
-
-.course-item {
-    img {
-        transition: .5s;
-    }
-    &:hover {
-        img {
-            transform: scale(1.1);
-        }
+    &.active {
+        background-color: transparent;
+        border-bottom: 2px solid $pale-purple;
     }
 }
 
-.team-item {
-    img {
-        transition: .5s;
-    }
-    &:hover {
-        img {
-            transform: scale(1.1);
-        }
-    }
-}
-
-.testimonial-carousel {
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        z-index: 1;
-    }
-    &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        z-index: 1;
-    }
-    .owl-item {
-        .testimonial-text {
-            transition: .5s;
-        }
-    }
-    .owl-item.center {
-        .testimonial-text {
-            * {
-                transition: .5s;
-                color: #FFFFFF !important;
-            }
-            background: #06BBCC !important;
-        }
-    }
-    .owl-dots {
-        margin-top: 24px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    .owl-dot {
-        position: relative;
-        display: inline-block;
-        margin: 0 5px;
-        width: 15px;
-        height: 15px;
-        border: 1px solid #CCCCCC;
-        transition: .5s;
-    }
-    .owl-dot.active {
-        background: #06BBCC;
-        border-color: #06BBCC;
+.clubsTextBlock {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .max-28 {
+        max-width: 27.938rem;
     }
 }

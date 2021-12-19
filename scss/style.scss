@@ -2,11 +2,12 @@
 @import 'base/font',
 'base/color',
 'base/text',
-'base/general',
-'base/responsive';
+'base/general';
 //... Layout
 @import 'layout/header',
 'layout/footer';
 //... Component
 @import 'component/public',
 'component/carousel';
+//... Responsive
+@import 'base/responsive';
