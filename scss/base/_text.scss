@@ -10,6 +10,17 @@
     color: $dark-blue-grey;
 }
 
+.BarlowMedium {
+    font-family: Barlow;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.78px;
+    color: $white;
+}
+
 .Headlineformmobile {
     font-family: Barlow;
     font-size: 1.5rem;
@@ -129,6 +140,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.39px;
+    // max-width: 16.75rem;
     color: $pale-purple;
 }
 
