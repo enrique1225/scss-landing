@@ -1,60 +1,40 @@
 .footer {
+    background-color: $dark-blue-grey;
     .btn.btn-social {
-        margin-right: 5px;
-        width: 35px;
-        height: 35px;
+        margin-right: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #F0FBFC;
+        background-color: $white;
+        color: $dark-blue-grey;
         font-weight: normal;
-        border: 1px solid #FFFFFF;
-        border-radius: 35px;
+        font-size: 20px;
+        border: 1px solid $white;
+        border-radius: 50%;
         transition: .3s;
         &:hover {
-            color: #06BBCC;
+            background-color: $transparent;
+            color: $white;
         }
     }
     .btn.btn-link {
         display: block;
-        margin-bottom: 5px;
-        padding: 0;
         text-align: left;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: normal;
         text-transform: capitalize;
-        transition: .3s;
-        &::before {
-            position: relative;
-            content: "\f105";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 10px;
-        }
+        transition: 0.3s;
+        padding: 0;
         &:hover {
-            letter-spacing: 1px;
+            color: $white;
+        }
+        &:focus {
+            outline: unset;
+            border: none;
             box-shadow: none;
         }
     }
-    .copyright {
-        padding: 25px 0;
-        font-size: 15px;
-        border-top: 1px solid rgba(256, 256, 256, .1);
-        a {
-            color: #F0FBFC;
-        }
-    }
-    .footer-menu {
-        a {
-            margin-right: 15px;
-            padding-right: 15px;
-            border-right: 1px solid rgba(255, 255, 255, .1);
-            &:last-child {
-                margin-right: 0;
-                padding-right: 0;
-                border-right: none;
-            }
-        }
+    #footer-logo {
+        margin-left: 2rem;
     }
 }

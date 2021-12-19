@@ -7,6 +7,12 @@
             }
             border-top: 1px solid #EEEEEE;
         }
+        .navbar-toggler {
+            filter: invert(1);
+        }
+        .navbar-nav .nav-link:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -36,41 +42,24 @@
             transform-origin: 0% 0%;
         }
     }
-    .testimonial-carousel {
-        &::before {
-            width: 300px;
-        }
-        &::after {
-            width: 300px;
-        }
-    }
 }
 
 @media (max-width: 768px) {
-    .header-carousel {
-        .owl-carousel-item {
-            position: relative;
-            min-height: 500px;
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
     .nav-pills .nav-link {
         margin: 0;
     }
 }
 
-@media (min-width: 768px) {
-    .testimonial-carousel {
-        &::before {
-            width: 200px;
-        }
-        &::after {
-            width: 200px;
-        }
+@media (max-width: 576px) {
+    .carousel-container {
+        padding: 0;
+    }
+    .btn.transparentBtn,
+    .btn.purpleBtn {
+        min-width: unset;
+        padding: 0.5rem 1rem;
+    }
+    .navbar #logo {
+        padding: 0;
     }
 }
