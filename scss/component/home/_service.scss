@@ -1,0 +1,46 @@
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    &::before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 80px);
+        height: 2px;
+        top: 4px;
+        left: -40px;
+        background: #06BBCC;
+        z-index: -1;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: calc(100% + 120px);
+        height: 2px;
+        bottom: 5px;
+        left: -60px;
+        background: #06BBCC;
+        z-index: -1;
+    }
+}
+
+.section-title.text-start {
+    &::before {
+        width: calc(100% + 40px);
+        left: 0;
+    }
+    &::after {
+        width: calc(100% + 60px);
+        left: 0;
+    }
+}
+
+.service-item {
+    transition: .5s;
+    &:hover {
+        margin-top: -10px;
+    }
+    * {
+        transition: .5s;
+    }
+}

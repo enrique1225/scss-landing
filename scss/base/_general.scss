@@ -17,3 +17,25 @@
 .text-right {
     text-align: right;
 }
+
+.btn.purpleBtn {
+    min-width: 11.563rem;
+    padding: 0.688rem 2rem 0.938rem;
+    border-radius: 25px;
+    background-color: $pale-purple;
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn.transparentBtn {
+    min-width: 11.563rem;
+    padding: 0.688rem 2rem 0.938rem;
+    border-radius: 25px;
+    background-color: $transparent;
+    border: 1px solid $pale-purple;
+    &:hover {
+        color: $white;
+        background-color: $pale-purple;
+    }
+}

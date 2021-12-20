@@ -4,11 +4,12 @@
 'base/text',
 'base/general';
 //... Layout
-@import 'layout/header',
-'layout/footer';
+@import 'layout/home/header',
+'layout/home/footer',
+'layout/admin/sidebar';
 //... Component
-@import 'component/public',
-'component/admin',
-'component/carousel';
+@import 'component/home/carousel',
+'component/home/service',
+'component/home/clubs';
 //... Responsive
 @import 'base/responsive';

@@ -1,0 +1,23 @@
+.nav-pills .nav-link {
+    background: none;
+    color: $purpley-grey;
+    margin: 0 10px;
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $pale-purple;
+    }
+    &.active {
+        background-color: $transparent;
+        border-bottom: 2px solid $pale-purple;
+    }
+}
+
+.clubsTextBlock {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .max-28 {
+        max-width: 27.938rem;
+    }
+}
