@@ -133,12 +133,12 @@
             background-color: rgba(151, 136, 151, 0.1);
             cursor: pointer;
             &.type-article {
-                color: $green;
-                background-color: #eafaf8;
+                color: $success;
+                background-color: $light-success;
             }
             &.type-video {
-                color: $purple;
-                background-color: #ffecf2;
+                color: $danger;
+                background-color: $light-danger;
             }
         }
         .reply-comment {
@@ -184,7 +184,7 @@
         .drill {
             padding: 10px;
             border-radius: 50%;
-            background-color: $yellow;
+            background-color: $light-warning;
             height: 35px;
             width: 35px;
         }
