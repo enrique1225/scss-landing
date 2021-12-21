@@ -1,21 +1,20 @@
-.navbar {
+.home-nav {
     background-color: $dark-blue-grey;
-    .dropdown-toggle {
-        &::after {
-            border: none;
-            content: "\f107";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            vertical-align: middle;
-            margin-left: 8px;
+    .navbar-brand {
+        height: 6.25rem;
+        #logo {
+            padding: 0 2rem;
         }
     }
-    #logo {
-        padding: 0 2rem;
+    #homebar {
+        display: none;
     }
-}
-
-.home-nav {
+    .homebar-checked {
+        display: none;
+        &:checked~#navbarCollapse {
+            display: block;
+        }
+    }
     .navbar-nav {
         .nav-link {
             margin-right: 30px;
@@ -37,8 +36,5 @@
         .nav-link.active {
             color: $pale-purple;
         }
-    }
-    .navbar-brand {
-        height: 6.25rem;
     }
 }

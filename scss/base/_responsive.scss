@@ -7,8 +7,8 @@
             }
             border-top: 1px solid #EEEEEE;
         }
-        .navbar-toggler {
-            filter: invert(1);
+        #homebar {
+            display: block;
         }
         .navbar-nav .nav-link:last-child {
             margin-right: 0;
@@ -51,16 +51,20 @@
 }
 
 @media (max-width: 576px) {
-    .carousel-container {
+    .carousel-inner .carousel-container {
         padding: 0;
     }
     .btn.transparentBtn,
     .btn.purpleBtn {
         min-width: unset;
         padding: 0.5rem 1rem;
+        font-size: 1rem;
     }
-    .navbar #logo {
+    .home-nav .navbar-brand #logo {
         padding: 0;
+    }
+    .Headlineform {
+        font-size: 3rem;
     }
     .ClubsTitle {
         font-size: 2.125rem;
