@@ -3,6 +3,7 @@
     position: absolute;
     width: 15.938rem;
     height: 100%;
+    overflow: auto;
     background-color: $dark-blue-grey;
     header {
         padding: 1rem;
@@ -93,9 +94,117 @@
     }
 }
 
+.admin-nav {
+    width: calc(100% - 15.938rem);
+    margin-left: 15.938rem;
+    padding: 1.406rem 1.531rem 1.344rem 1.844rem;
+}
+
 #main-content {
     width: calc(100% - 15.938rem);
     margin-left: 15.938rem;
+    padding: 1.406rem 1.531rem 1.344rem 1.844rem;
+    background-color: rgba(73, 72, 80, 0.05);
+    .message-block {
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.03);
+        background-color: $white;
+        .message-avatar {
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: 50%;
+        }
+        .message-text {
+            border-radius: 3px;
+        }
+        .message-control {
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 3%);
+            background-color: rgba(151, 136, 151, 0.1);
+            font-size: 0.75rem;
+            color: $dark-blue-grey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 150px;
+            margin: 20px 10px 0 0;
+            cursor: pointer;
+            img {
+                width: 0.8rem;
+            }
+        }
+        .reply-users {
+            margin-top: 30px;
+            margin-left: -70px;
+            img {
+                width: 1.563rem;
+                height: 1.563rem;
+                border-radius: 50%;
+            }
+        }
+        .reply-icons i {
+            padding: 7px;
+            border-radius: 50%;
+            background-color: rgba(151, 136, 151, 0.1);
+            cursor: pointer;
+            &.type-article {
+                color: $green;
+                background-color: #eafaf8;
+            }
+            &.type-video {
+                color: $purple;
+                background-color: #ffecf2;
+            }
+        }
+        .reply-comment {
+            margin-left: 3rem;
+        }
+        .stars {
+            input {
+                display: none;
+                &:checked~label {
+                    color: gold;
+                }
+                &:checked {
+                    >label {
+                        &:hover {
+                            color: gold;
+                        }
+                        &:hover~label {
+                            color: gold;
+                        }
+                    }
+                }
+            }
+            label {
+                float: right;
+                font-size: 24px;
+                color: #d5d5d5;
+                line-height: 1;
+                &:before {
+                    content: '★';
+                }
+            }
+            &:not(:checked) {
+                >label {
+                    &:hover {
+                        color: gold;
+                    }
+                    &:hover~label {
+                        color: gold;
+                    }
+                }
+            }
+        }
+        .drill {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: $yellow;
+            height: 35px;
+            width: 35px;
+        }
+    }
 }
 
 #hamburger {
@@ -131,7 +240,8 @@
                 }
             }
         }
-        #main-content {
+        #main-content,
+        .admin-nav {
             width: calc(100% - 4rem);
             margin-left: 4rem;
         }

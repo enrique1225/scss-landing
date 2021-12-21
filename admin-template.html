@@ -85,37 +85,241 @@
         <input type="radio" class="accordion_input" name="accordion" id="acc-close" />
     </div>
     <!-- Sidebar End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand bg-white admin-nav">
+        <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link Tablabel p-0" href="#">Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link Tablabel p-0" href="#">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link Tablabel p-0" href="#" tabindex="-1" aria-disabled="true">Account</a>
+                </li>
+            </ul>
+            <form class="d-flex align-items-center">
+                <div class="me-3">
+                    <img class="px-2 py-3" src="img/icon-search.svg" />
+                    <img class="px-2 py-3" src="img/icon-alarm.svg" />
+                    <img class="px-2 py-3" src="img/icon-quick.svg" />
+                    <a class="nav-link Tablabel d-inline-block" href="#">James</a>
+                    <img src="img/avabar.jpg" id="avatar">
+                </div>
+                <img src="img/icon-settings.svg">
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Main content Start -->
     <div id="main-content">
-        <nav class="navbar navbar-expand bg-white admin-nav">
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link Tablabel" href="#">Feed</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link Tablabel" href="#">Milestones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link Tablabel" href="#" tabindex="-1" aria-disabled="true">Account</a>
-                    </li>
-                </ul>
-                <form class="d-flex align-items-center">
-                    <div class="me-3">
-                        <img class="px-2 py-3" src="img/search-icon.svg" />
-                        <img class="px-2 py-3" src="img/alarm.svg" />
-                        <img class="px-2 py-3" src="img/quick-actions.svg" />
-                        <a class="nav-link Tablabel d-inline-block" href="#">James</a>
-                        <img src="img/avabar.jpg" id="avatar">
+        <!-- New post Start -->
+        <div class="message-block">
+            <div class="w-100 d-flex align-items-start justify-content-between p-3">
+                <img src="img/avabar.jpg" class="message-avatar me-3" alt="my avabar" />
+                <div class="w-100">
+                    <div class="message-text border p-50 d-flex align-items-center justify-content-between">
+                        <h5 class="PostTitle mb-0">Start a new post</h5>
+                        <img src="img/camera.jpg">
                     </div>
-                    <img src="img/settings.svg">
-                </form>
+                    <div class="d-flex">
+                        <div class="message-control"><img src="img/icon-content.svg" class="me-2" /> <span>Written / Photo</span></div>
+                        <div class="message-control"><img src="img/icon-video.svg" class="me-2" /> <span>Video</span> </div>
+                        <div class="message-control"><img src="img/icon-game.svg" class="me-2" /> <span>Game</span> </div>
+                        <div class="message-control"><img src="img/icon-drill.svg" class="me-2" /> <span>Drill</span> </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <h2>This is main content</h2>
-    </div>
+        </div>
+        <!-- New post End -->
+        <!-- Article post Start -->
+        <div class="message-block mt-3">
+            <div class="w-100 d-flex align-items-start justify-content-between p-3">
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <div class="w-100">
+                    <div class="message-text d-flex align-items-center justify-content-between ">
+                        <h5 class="Tablabel mb-0 ">
+                            <span class="user-name">John Smith</span><br>
+                            <span class="user-state">8U coach</span><br>
+                            <span class="post-time">3d</span>
+                        </h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label Tablabel" for="flexCheckChecked">Add to Highlights Reel</label>
+                        </div>
+                    </div>
+                    <div class="col-12 Tablabel mt-3">
+                        <p class="user-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum eu mauris commodo, non dignissim sem mattis. Morbi mollis vulputate sollicitudin. Sed mattis eget leo et tristique. Donec risus nisl, egestas eget ex ut,
+                            commodo lobortis mauris. Nullam at malesuada mauris, sit amet blandit odio. …See more</p>
+                    </div>
+                    <div class="d-sm-block d-md-flex align-items-end justify-content-between">
+                        <div class="reply-users">
+                            <img src="img/avatar2.jpg" class="me-2" alt="avatar 2">
+                            <img src="img/avatar3.jpg" class="me-2" alt="avatar 3">
+                            <span class="NavigationOffMobilePositive">Ben Salmon and 5 others</span>
+                        </div>
+                        <div class="reply-icons">
+                            <i class="fas fa-file-alt type-article me-2" alt="article"></i>
+                            <i class="fas fa-thumbs-up me-2" alt="like"></i>
+                            <i class="fas fa-comment-alt me-2" alt="comment"></i>
+                            <i class="fas fa-share-alt me-2" alt="share"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Article post End -->
+        <!-- Video post Start -->
+        <div class="message-block mt-3">
+            <div class="w-100 d-flex align-items-start justify-content-between p-3">
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <div class="w-100">
+                    <div class="message-text d-flex align-items-center justify-content-between ">
+                        <h5 class="Tablabel mb-0 ">
+                            <span class="user-name">John Smith</span><br>
+                            <span class="user-state">8U coach</span><br>
+                            <span class="post-time">3d</span>
+                        </h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label Tablabel" for="flexCheckChecked">Add to Highlights Reel</label>
+                        </div>
+                    </div>
+                    <div class="col-12 Tablabel mt-3">
+                        <p class="user-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum eu mauris commodo, non dignissim sem mattis. Morbi mollis vulputate sollicitudin. Sed mattis eget leo et tristique. Donec risus nisl, egestas eget ex ut,
+                            commodo lobortis mauris. Nullam at malesuada mauris, sit amet blandit odio. …See more</p>
+                        <iframe width="100%" height="650" src="https://www.youtube.com/embed/a3ICNMQW7Ok?controls=0"></iframe>
+                    </div>
+                    <div class="d-sm-block d-md-flex align-items-end justify-content-between">
+                        <div class="reply-users">
+                            <img src="img/avatar2.jpg" class="me-2" alt="avatar 2">
+                            <img src="img/avatar3.jpg" class="me-2" alt="avatar 3">
+                            <span class="NavigationOffMobilePositive">Ben Salmon and 5 others</span>
+                        </div>
+                        <div class="reply-icons">
+                            <span class="NavigationOffMobilePositive me-3"><span class="comment-count">6</span> comments</span>
+                            <i class="fas fa-play-circle type-video me-2" alt="comment"></i>
+                            <i class="fas fa-thumbs-up me-2" alt="like"></i>
+                            <i class="fas fa-comment-alt me-2" alt="comment"></i>
+                            <i class="fas fa-share-alt me-2" alt="share"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video post End -->
+        <!-- Comment post Start -->
+        <div class="message-block">
+            <div class="w-100 d-flex align-items-start justify-content-between p-3">
+                <img src="img/avabar.jpg" class="message-avatar me-3" alt="my avabar" />
+                <div class="w-100">
+                    <div class="message-text d-flex align-items-center justify-content-between border p-50">
+                        <h5 class="PostTitle mb-0">Add comment</h5>
+                    </div>
+                    <div class="comment">
+                        <div class="bg-purple-grey mt-3 p-3">
+                            <div class="message-text d-flex align-items-center justify-content-between ">
+                                <h5 class="Tablabel mb-0 ">
+                                    <span class="user-name">Adrian Scarborough</span><br>
+                                    <span class="user-state">8U coach</span> <span class="post-time">3d</span>
+                                </h5>
+                            </div>
+                            <div class="col-12 Tablabel mt-3">
+                                <p class="user-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum eu mauris commodo, non dignissim sem mattis. Morbi mollis vulputate sollicitudin. Sed mattis eget leo et tristique. Donec risus nisl, egestas eget
+                                    ex ut, commodo lobortis mauris. Nullam at malesuada mauris, sit amet blandit odio.</p>
+                            </div>
+                        </div>
+                        <div class="reply-icons mt-3">
+                            <i class="fas fa-thumbs-up me-2" alt="like"></i>
+                            <i class="fas fa-comment-alt me-2" alt="comment"></i>
+                        </div>
+                    </div>
 
+                    <div class="reply-comment mt-3">
+                        <div class="bg-purple-grey mt-3 p-3">
+                            <div class="message-text d-flex align-items-center justify-content-between ">
+                                <h5 class="Tablabel mb-0 ">
+                                    <span class="user-name">Adrian Scarborough</span><br>
+                                    <span class="user-state">8U coach</span> <span class="post-time">3d</span>
+                                </h5>
+                            </div>
+                            <div class="col-12 Tablabel mt-3">
+                                <p class="user-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum eu mauris commodo, non dignissim sem mattis. Morbi mollis vulputate sollicitudin. Sed mattis eget leo et tristique. Donec risus nisl, egestas eget
+                                    ex ut, commodo lobortis mauris. Nullam at malesuada mauris, sit amet blandit odio.</p>
+                            </div>
+                        </div>
+                        <div class="reply-icons mt-3">
+                            <i class="fas fa-thumbs-up me-2" alt="like"></i>
+                            <i class="fas fa-comment-alt me-2" alt="comment"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comment post End -->
+        <!-- Rating post Start -->
+        <div class="message-block mt-3">
+            <div class="w-100 d-flex align-items-start justify-content-between p-3">
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <div class="w-100">
+                    <div class="message-text d-flex align-items-center justify-content-between ">
+                        <h5 class="Tablabel mb-0 ">
+                            <span class="user-name">John Smith</span><br>
+                            <span class="user-state">8U coach</span><br>
+                            <span class="post-time">3d</span>
+                        </h5>
+                    </div>
+                    <div class="col-12 Tablabel mt-3">
+                        <p class="user-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum eu mauris commodo, non dignissim sem mattis. Morbi mollis vulputate sollicitudin. Sed mattis eget leo et tristique. Donec risus nisl, egestas eget ex ut,
+                            commodo lobortis mauris. Nullam at malesuada mauris, sit amet blandit odio. …See more</p>
+                        <iframe width="100%" height="650" src="https://www.youtube.com/embed/a3ICNMQW7Ok?controls=0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="d-sm-block d-md-flex align-items-end justify-content-between p-3">
+                <div class="d-flex align-items-center">
+                    <span class="Tablabel me-2">My rating</span>
+                    <div class="stars me-5">
+                        <input type="radio" id="my-five" name="my-rate" value="5">
+                        <label for="my-five"></label>
+                        <input type="radio" id="my-four" name="my-rate" value="4">
+                        <label for="my-four"></label>
+                        <input type="radio" id="my-three" name="my-rate" value="3">
+                        <label for="my-three"></label>
+                        <input type="radio" id="my-two" name="my-rate" value="2">
+                        <label for="my-two"></label>
+                        <input type="radio" id="my-one" name="my-rate" value="1">
+                        <label for="my-one"></label>
+                        <span class="result"></span>
+                    </div>
+                    <span class="Tablabel me-2">Coach rating</span>
+                    <div class="stars">
+                        <input type="radio" id="coach-five" name="coach-rate" value="5">
+                        <label for="coach-five"></label>
+                        <input type="radio" id="coach-four" name="coach-rate" value="4">
+                        <label for="coach-four"></label>
+                        <input type="radio" id="coach-three" name="coach-rate" value="3">
+                        <label for="coach-three"></label>
+                        <input type="radio" id="coach-two" name="coach-rate" value="2">
+                        <label for="coach-two"></label>
+                        <input type="radio" id="coach-one" name="coach-rate" value="1">
+                        <label for="coach-one"></label>
+                        <span class="result"></span>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-bolt me-2" alt="bolt"></i>
+                    <span class="Tablabel me-2">Others typically progress to next drill in 4 days</span>
+                    <img src="img/icon-drill.svg" class="drill">
+                </div>
+            </div>
+        </div>
+        <!-- Rating post End -->
+    </div>
+    <!-- Main content End -->
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
 </body>
