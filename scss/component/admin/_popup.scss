@@ -1,59 +1,116 @@
-.tooltip-container {
-    position: relative;
-    display: inline-block;
-    color: $purpley-grey;
-    width: 2.3rem;
-    text-align: center;
-    label {
-        cursor: pointer;
-    }
-    .notification-checked {
-        display: none;
-        &:checked~ {
-            .tooltip {
-                opacity: 1;
-                transform: scale(1);
-            }
-            label {
-                width: 2.063rem;
-                height: 2.063rem;
-                padding: 5px 10px;
-                border-radius: 50%;
-                background-color: rgba(73, 72, 80, 0.05);
+.admin-nav {
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+        color: $purpley-grey;
+        text-align: center;
+        label {
+            cursor: pointer;
+            padding: 5px 9px 5px 11px;
+            border-radius: 50%;
+        }
+        .notification-checked {
+            display: none;
+            &:checked~ {
+                #notification-tooltip {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                #profile-tooltip {
+                    opacity: 0;
+                }
+                label {
+                    background-color: rgba(73, 72, 80, 0.05);
+                }
             }
         }
-    }
-    .tooltip {
-        opacity: 0;
-        // opacity: 1;
-        z-index: 99;
-        width: 16.938rem;
-        display: block;
-        background: #fff;
-        position: absolute;
-        right: -80px;
-        top: 76px;
-        transition: all .2s ease-in-out;
-        transform: scale(0);
-        header {
-            background-color: $dark-blue-grey;
-            padding: 1.5rem 0 2.25rem;
-            .new-notification {
-                background-color: $white;
-                border-radius: 3px;
-                width: 8.25rem;
-                padding: 0.625rem 0;
-                position: absolute;
-                bottom: -12px;
-                left: calc(50% - 4.125rem);
+        .profile-checked {
+            display: none;
+            &:checked~ {
+                .profile {
+                    background-color: rgb(151 136 151 / 28%)!important;
+                }
+                #notification-tooltip {
+                    opacity: 0;
+                }
+                #profile-tooltip {
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
         }
-        .content {
-            padding: 2rem 0 0;
-            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-            .notification {
-                border-bottom: solid 1px #ededf4;
-                padding: 1rem;
+        .tooltip {
+            opacity: 0;
+            // opacity: 1;
+            z-index: 99;
+            width: 16.938rem;
+            display: block;
+            background: $white;
+            position: absolute;
+            right: calc(50% - 140px);
+            transition: all .2s ease-in-out;
+            transform: scale(0);
+            &#notification-tooltip {
+                top: 76px;
+                header {
+                    background-color: $dark-blue-grey;
+                    padding: 1.5rem 0 2.25rem;
+                    .new-notification {
+                        background-color: $white;
+                        border-radius: 3px;
+                        width: 8.25rem;
+                        padding: 0.625rem 0;
+                        position: absolute;
+                        bottom: -12px;
+                        left: calc(50% - 4.125rem);
+                    }
+                }
+                .content {
+                    padding: 2rem 0 0;
+                    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+                    .notification {
+                        border-bottom: solid 1px $tile;
+                        padding: 1rem;
+                    }
+                }
+            }
+            &#profile-tooltip {
+                top: 81px;
+                header {
+                    background-color: $dark-blue-grey;
+                    padding: 1.5rem 0 0.5rem;
+                    height: 3.6rem;
+                    .profile-header {
+                        position: absolute;
+                        left: 1rem;
+                        img {
+                            width: 3rem;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .content {
+                    padding: 2rem 0 0;
+                    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+                    .notification {
+                        padding: 0.5rem 1rem;
+                        img {
+                            width: 1rem;
+                        }
+                    }
+                    .signout {
+                        padding: 1rem;
+                        border-top: solid 1px $tile;
+                        button {
+                            border-radius: 2px;
+                            background-color: $light;
+                            text-align: center;
+                            padding: 0.5rem;
+                            width: 4.3rem;
+                            border: none;
+                        }
+                    }
+                }
             }
         }
     }

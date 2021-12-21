@@ -96,11 +96,11 @@
                 <div class="me-3">
                     <img class="px-2 py-3" src="img/icon-search.svg" />
                     <div class="tooltip-container">
-                        <input type="checkbox" class="notification-checked" id="notification-checked" />
+                        <input type="radio" name="header-icon" class="notification-checked" id="notification-checked" />
                         <label class="header-icon" for="notification-checked">
                             <i class="fas fa-bell"></i>
                         </label>
-                        <div class="tooltip">
+                        <div class="tooltip" id="notification-tooltip">
                             <header class="text-center position-relative">
                                 <p class="Headline20Medium mb-0">User Notifications</p>
                                 <p class="new-notification Tabstatic mb-0"><span class="notification-count">23</span> new notifications</p>
@@ -137,9 +137,58 @@
                             </div>
                         </div>
                     </div>
-                    <img class="px-2 py-3" src="img/icon-quick.svg" />
-                    <a class="nav-link Tablabel d-inline-block" href="#">James</a>
-                    <img src="img/profile.jpg" id="avatar" alt="profile-avatar">
+                    <img class="px-2 py-3 me-3" src="img/icon-quick.svg" />
+                    <div class="tooltip-container">
+                        <input type="radio" name="header-icon" class="profile-checked" id="profile-checked" />
+                        <label class="header-icon" for="profile-checked">
+                            <div class="profile d-inline-block">
+                                <p class="nav-link Tablabel d-inline-block mb-0 user-name">Highland Hills Jaguars</p>
+                                <img src="img/profile.jpg" id="avatar" alt="profile-avatar">
+                            </div>
+                        </label>
+                        <div class="tooltip" id="profile-tooltip">
+                            <header class="position-relative">
+                                <div class="d-flex align-items-center profile-header">
+                                    <img src="img/profile.jpg" class="me-3" alt="avatar">
+                                    <div>
+                                        <p class="Headline20Medium user-name">Beth Bormen</p>
+                                        <p class="user-role Tabstatic mb-0">Club Director</p>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="content">
+                                <div class="d-flex align-items-center notification">
+                                    <img src="img/icon-user.svg" class="me-2" alt="My profile">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-0">My profile</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="img/icon-bar.svg" class="me-2" alt="Tasks to review">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-0">Tasks to review</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="img/icon-message.svg" class="me-2" alt="Messages">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-0">Messages</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="img/icon-setting.svg" class="me-2" alt="Setting">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-0">Settings</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between signout">
+                                    <button type="btn" class="text-uppercase buttonsmalllabel">sign out</button>
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <img src="img/icon-settings.svg">
             </form>
@@ -151,7 +200,7 @@
         <!-- New post Start -->
         <div class="message-block">
             <div class="w-100 d-flex align-items-start justify-content-between p-3">
-                <img src="img/avabar.jpg" class="message-avatar me-3" alt="my avabar" />
+                <img src="img/avatar.jpg" class="message-avatar me-3" alt="my avatar" />
                 <div class="w-100">
                     <div class="message-text border p-50 d-flex align-items-center justify-content-between">
                         <h5 class="PostTitle mb-0">Start a new post</h5>
@@ -170,7 +219,7 @@
         <!-- Article post Start -->
         <div class="message-block mt-3">
             <div class="w-100 d-flex align-items-start justify-content-between p-3">
-                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avatar" />
                 <div class="w-100">
                     <div class="message-text d-flex align-items-center justify-content-between ">
                         <h5 class="Tablabel mb-0 ">
@@ -207,7 +256,7 @@
         <!-- Video post Start -->
         <div class="message-block mt-3">
             <div class="w-100 d-flex align-items-start justify-content-between p-3">
-                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avatar" />
                 <div class="w-100">
                     <div class="message-text d-flex align-items-center justify-content-between ">
                         <h5 class="Tablabel mb-0 ">
@@ -246,7 +295,7 @@
         <!-- Comment post Start -->
         <div class="message-block">
             <div class="w-100 d-flex align-items-start justify-content-between p-3">
-                <img src="img/avabar.jpg" class="message-avatar me-3" alt="my avabar" />
+                <img src="img/avatar.jpg" class="message-avatar me-3" alt="my avatar" />
                 <div class="w-100">
                     <div class="message-text d-flex align-items-center justify-content-between border p-50">
                         <h5 class="PostTitle mb-0">Add comment</h5>
@@ -295,7 +344,7 @@
         <!-- Rating post Start -->
         <div class="message-block mt-3">
             <div class="w-100 d-flex align-items-start justify-content-between p-3">
-                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avabar" />
+                <img src="img/avatar1.jpg" class="message-avatar me-3" alt="my avatar" />
                 <div class="w-100">
                     <div class="message-text d-flex align-items-center justify-content-between ">
                         <h5 class="Tablabel mb-0 ">
