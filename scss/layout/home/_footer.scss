@@ -4,16 +4,17 @@
         margin-right: 2rem;
         width: 2.5rem;
         height: 2.5rem;
-        display: flex;
+        display: inline-block;
         align-items: center;
         justify-content: center;
-        background-color: $white;
-        color: $dark-blue-grey;
+        background-color: #fff;
+        color: #10182c;
         font-weight: normal;
         font-size: 20px;
-        border: 1px solid $white;
+        border: 1px solid #fff;
         border-radius: 50%;
-        transition: .3s;
+        transition: 0.3s;
+        padding: 5px;
         &:hover {
             background-color: $transparent;
             color: $white;
