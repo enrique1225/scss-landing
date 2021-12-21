@@ -54,15 +54,6 @@
                 padding: 0.5rem 0;
             }
         }
-        .box-close {
-            position: absolute;
-            height: 40px;
-            width: 100%;
-            top: 0;
-            left: 0;
-            cursor: pointer;
-            display: none;
-        }
         i {
             color: $purpley-grey;
             line-height: 2;
@@ -70,14 +61,8 @@
     }
     .accordion_input {
         display: none;
-        &:checked+.box {
-            height: auto;
-            .box-content {
-                display: inline-block;
-            }
-            .box-close {
-                display: inline-block;
-            }
+        &:checked+section .box-content {
+            display: inline-block;
         }
         &:checked+section.box {
             .box-title {

@@ -160,7 +160,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 fadeInUp">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="service-item text-center pt-3">
                             <div class="p-4 text-center">
                                 <h5 class="text-uppercase BarlowMedium mb-5">Single timeline</h5>
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fadeInUp">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="service-item text-center pt-3">
                             <div class="p-4 text-center">
                                 <h5 class="text-uppercase BarlowMedium mb-5">Social content</h5>
@@ -184,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fadeInUp">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="service-item text-center pt-3">
                             <div class="p-4 text-center">
                                 <h5 class="text-uppercase BarlowMedium mb-5">Sequential drills</h5>
@@ -207,136 +207,137 @@
     <div class="container-fluid py-3 px-0 mx-0 bg-dark-purple">
         <div class="container-xxl pt-5 px-0">
             <div class="container">
-                <ul class="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-clubs-tab" data-bs-toggle="pill" data-bs-target="#pills-clubs" type="button" role="tab" aria-controls="pills-clubs" aria-selected="true">Clubs</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-coaches-tab" data-bs-toggle="pill" data-bs-target="#pills-coaches" type="button" role="tab" aria-controls="pills-coaches" aria-selected="false">Coaches</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-athletes-tab" data-bs-toggle="pill" data-bs-target="#pills-athletes" type="button" role="tab" aria-controls="pills-athletes" aria-selected="false">Athletes</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-parents-tab" data-bs-toggle="pill" data-bs-target="#pills-parents" type="button" role="tab" aria-controls="pills-parents" aria-selected="false">Parents</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-clubs" role="tabpanel" aria-labelledby="pills-clubs-tab">
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                <div class="tabset nav nav-pills mb-3 text-center justify-content-center">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tabset" id="tab1" aria-controls="clubs" checked>
+                    <label class="Headline20Medium" for="tab1">Clubs</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tabset" id="tab2" aria-controls="coaches">
+                    <label class="Headline20Medium" for="tab2">Coaches</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tabset" id="tab3" aria-controls="athletes">
+                    <label class="Headline20Medium" for="tab3">Athletes</label>
+                    <!-- Tab 4 -->
+                    <input type="radio" name="tabset" id="tab4" aria-controls="parents">
+                    <label class="Headline20Medium" for="tab4">Parents</label>
+
+                    <div class="tab-panels">
+                        <section id="clubs" class="tab-panel">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                                </div>
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                                </div>
                             </div>
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                        </section>
+                        <section id="coaches" class="tab-panel">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                                </div>
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-coaches" role="tabpanel" aria-labelledby="pills-coaches-tab">
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                        </section>
+                        <section id="athletes" class="tab-panel">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                                </div>
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                                </div>
                             </div>
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                        </section>
+                        <section id="parents" class="tab-panel">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
+                                </div>
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                            <div class="row my-5 py-3 px-3">
+                                <div class="col-lg-6 clubsTextBlock">
+                                    <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
+                                    <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-athletes" role="tabpanel" aria-labelledby="pills-athletes-tab">
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
-                            </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
-                            </div>
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-parents" role="tabpanel" aria-labelledby="pills-parents-tab">
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">One platform for <br> all teams</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle1.jpg" alt="one platform for all teams">
-                            </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="enabling your coaches">
-                            </div>
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">Enabling your <br> coaches</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                        </div>
-                        <div class="row my-5 py-3 px-3">
-                            <div class="col-lg-6 fadeInUp clubsTextBlock">
-                                <h1 class="ClubsTitle text-uppercase mb-4">charting<br>progress</h1>
-                                <h5 class="Headline20Medium max-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat et augue id cursus. Donec vel lobortis nulla. Aliquam pretium hendrerit nulla. Fusce et velit ut lacus molestie lobortis sed sit amet nibh. </h5>
-                            </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid mx-auto d-block" src="img/circle2.png" alt="charting progress">
-                            </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -345,7 +346,7 @@
     <!-- Clubs End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid footer py-5 px-0 fadeIn">
+    <div class="container-fluid footer py-5 px-0">
         <div class="p-0 p-md-5">
             <div class="row">
                 <div class="col-md-6 p-0">

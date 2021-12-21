@@ -1,14 +1,89 @@
-.nav-pills .nav-link {
+.tabset {
     background: none;
     color: $purpley-grey;
     margin: 0 10px;
-    &:hover,
-    &:focus {
-        border-bottom: 2px solid $pale-purple;
+    >input[type="radio"] {
+        position: absolute;
+        left: -20vw;
     }
-    &.active {
-        background-color: $transparent;
-        border-bottom: 2px solid $pale-purple;
+    .tab-panel {
+        display: none;
+    }
+    >input {
+        &:first-child {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:first-child {
+                                display: block;
+                                animation: fadeIn linear 2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:nth-child(2) {
+                                display: block;
+                                animation: fadeIn linear 2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:nth-child(3) {
+                                display: block;
+                                animation: fadeIn linear 2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(7) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:nth-child(4) {
+                                display: block;
+                                animation: fadeIn linear 2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:checked {
+            + {
+                label {
+                    border-bottom: 2px solid $pale-purple;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+    >label {
+        position: relative;
+        margin: 15px 1.5rem 25px;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $pale-purple;
+            padding-bottom: 5px;
+        }
     }
 }
 
@@ -17,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
     .max-28 {
         max-width: 27.938rem;
     }
