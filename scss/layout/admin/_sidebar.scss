@@ -78,16 +78,10 @@
     }
 }
 
-.admin-nav {
-    width: calc(100% - 15.938rem);
-    margin-left: 15.938rem;
-    padding: 1.406rem 1.531rem 1.344rem 1.844rem;
-}
-
 #main-content {
     width: calc(100% - 15.938rem);
     margin-left: 15.938rem;
-    padding: 1.406rem 1.531rem 1.344rem 1.844rem;
+    padding: 1.406rem 1.5rem 1.344rem;
     background-color: $secondary;
     .message-block {
         border-radius: 3px;
@@ -113,6 +107,7 @@
             justify-content: space-between;
             max-width: 150px;
             margin: 20px 10px 0 0;
+            float: left;
             cursor: pointer;
             img {
                 width: 0.8rem;

@@ -117,7 +117,7 @@
                 .signout {
                     padding: 1rem;
                     border-top: solid 1px $tile;
-                    button {
+                    .btn {
                         border-radius: 2px;
                         background-color: $light;
                         text-align: center;
@@ -152,7 +152,7 @@
                 .signout {
                     padding: 1.5rem 1rem;
                     border-top: solid 1px $tile;
-                    button {
+                    .btn {
                         border-radius: 2px;
                         text-align: center;
                         padding: 0.5rem;
@@ -170,7 +170,7 @@
         }
         &#setting-tooltip {
             top: 49px;
-            right: -40px;
+            right: -16px;
             width: 26.563rem;
             background-color: #fbfbfb;
             header {
