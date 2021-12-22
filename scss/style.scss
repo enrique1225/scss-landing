@@ -7,10 +7,11 @@
 @import 'layout/home/header',
 'layout/home/footer',
 'layout/admin/sidebar',
-'layout/admin/header';
+'layout/admin/header',
+'layout/admin/content';
 //... Component
 @import 'component/home/carousel',
-'component/home/clubs',
+'component/home/tabs',
 'component/admin/timeline',
 'component/admin/popup';
 //... Responsive

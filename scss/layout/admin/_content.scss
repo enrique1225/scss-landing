@@ -1,0 +1,107 @@
+#main-content {
+    width: calc(100% - 15.938rem);
+    margin-left: 15.938rem;
+    padding: 1.406rem 1.5rem 1.344rem;
+    background-color: $secondary;
+    .message-block {
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.03);
+        background-color: $white;
+        .message-avatar {
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: 50%;
+        }
+        .message-text {
+            border-radius: 3px;
+        }
+        .message-control {
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 3%);
+            background-color: rgba(151, 136, 151, 0.1);
+            font-size: 0.75rem;
+            color: $dark-blue-grey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 150px;
+            margin: 20px 10px 0 0;
+            float: left;
+            cursor: pointer;
+            img {
+                width: 0.8rem;
+            }
+        }
+        .reply-users {
+            margin-top: 30px;
+            margin-left: -70px;
+            img {
+                width: 1.563rem;
+                height: 1.563rem;
+                border-radius: 50%;
+            }
+        }
+        .reply-icons i {
+            padding: 7px;
+            border-radius: 50%;
+            background-color: rgba(151, 136, 151, 0.1);
+            cursor: pointer;
+            &.type-article {
+                color: $success;
+                background-color: $light-success;
+            }
+            &.type-video {
+                color: $danger;
+                background-color: $light-danger;
+            }
+        }
+        .reply-comment {
+            margin-left: 3rem;
+        }
+        .stars {
+            input {
+                display: none;
+                &:checked~label {
+                    color: gold;
+                }
+                &:checked {
+                    >label {
+                        &:hover {
+                            color: gold;
+                        }
+                        &:hover~label {
+                            color: gold;
+                        }
+                    }
+                }
+            }
+            label {
+                float: right;
+                font-size: 24px;
+                color: #d5d5d5;
+                line-height: 1;
+                &:before {
+                    content: '★';
+                }
+            }
+            &:not(:checked) {
+                >label {
+                    &:hover {
+                        color: gold;
+                    }
+                    &:hover~label {
+                        color: gold;
+                    }
+                }
+            }
+        }
+        .drill {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: $light-warning;
+            height: 35px;
+            width: 35px;
+        }
+    }
+}
