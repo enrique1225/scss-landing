@@ -40,6 +40,7 @@
             #sidebar {
                 display: block;
                 width: 100%;
+                height: auto;
             }
         }
     }
@@ -96,6 +97,11 @@
     .nav-pills .nav-link {
         margin: 0;
     }
+    #main-content {
+        .message-block iframe {
+            height: 500px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -122,5 +128,18 @@
     }
     .mobile-order {
         order: 1;
+    }
+    #main-content {
+        .message-block {
+            iframe {
+                height: 300px;
+            }
+            .message-control {
+                display: block;
+                width: 150px;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
     }
 }

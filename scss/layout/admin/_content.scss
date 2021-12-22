@@ -5,7 +5,7 @@
     background-color: $secondary;
     .message-block {
         border-radius: 3px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.03);
+        border-bottom: 1px solid $tile;
         background-color: $white;
         .message-avatar {
             width: 3.125rem;
@@ -16,44 +16,45 @@
             border-radius: 3px;
         }
         .message-control {
-            padding: 0.3rem 1rem;
+            padding: 0.4rem 1rem;
             border-radius: 20px;
             box-shadow: 0 0 10px 0 rgb(0 0 0 / 3%);
             background-color: rgba(151, 136, 151, 0.1);
             font-size: 0.75rem;
             color: $dark-blue-grey;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 150px;
+            display: inline-block;
             margin: 20px 10px 0 0;
-            float: left;
             cursor: pointer;
             img {
                 width: 0.8rem;
             }
         }
+        iframe {
+            height: 600px;
+        }
         .reply-users {
-            margin-top: 30px;
-            margin-left: -70px;
+            margin: 20px;
             img {
                 width: 1.563rem;
                 height: 1.563rem;
                 border-radius: 50%;
             }
         }
-        .reply-icons i {
-            padding: 7px;
-            border-radius: 50%;
-            background-color: rgba(151, 136, 151, 0.1);
-            cursor: pointer;
-            &.type-article {
-                color: $success;
-                background-color: $light-success;
-            }
-            &.type-video {
-                color: $danger;
-                background-color: $light-danger;
+        .reply-icons {
+            margin: 20px;
+            i {
+                padding: 7px;
+                border-radius: 50%;
+                background-color: rgba(151, 136, 151, 0.1);
+                cursor: pointer;
+                &.type-article {
+                    color: $success;
+                    background-color: $light-success;
+                }
+                &.type-video {
+                    color: $danger;
+                    background-color: $light-danger;
+                }
             }
         }
         .reply-comment {
