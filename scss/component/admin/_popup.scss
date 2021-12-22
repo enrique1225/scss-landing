@@ -3,7 +3,7 @@
     display: inline-block;
     color: $purpley-grey;
     text-align: center;
-    label {
+    .header-icon {
         cursor: pointer;
         padding: 5px 9px 5px 11px;
         border-radius: 50%;
@@ -41,6 +41,18 @@
             }
         }
     }
+    .profile-setting {
+        display: none;
+        &:checked~ {
+            #profile-tooltip {
+                display: none;
+            }
+            #multi-profile-tooltip {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
     .tooltip {
         opacity: 0;
         z-index: 99;
@@ -52,7 +64,7 @@
         transition: all .2s ease-in-out;
         transform: scale(0);
         &#notification-tooltip {
-            top: 76px;
+            top: 80px;
             header {
                 background-color: $dark-blue-grey;
                 padding: 1.5rem 0 2.25rem;
@@ -95,6 +107,9 @@
                 box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
                 .notification {
                     padding: 0.5rem 1rem;
+                    &:last-child {
+                        cursor: pointer;
+                    }
                     img {
                         width: 1rem;
                     }
@@ -109,6 +124,46 @@
                         padding: 0.5rem;
                         width: 4.3rem;
                         border: none;
+                    }
+                }
+            }
+        }
+        &#multi-profile-tooltip {
+            top: 81px;
+            header {
+                background-color: $dark-blue-grey;
+                padding: 1rem;
+                height: 3.6rem;
+            }
+            .content {
+                padding: 0;
+                box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+                .profile-user {
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+                    &.active {
+                        background-color: $tile;
+                    }
+                    img {
+                        width: 2rem;
+                        border-radius: 50%;
+                    }
+                }
+                .signout {
+                    padding: 1.5rem 1rem;
+                    border-top: solid 1px $tile;
+                    button {
+                        border-radius: 2px;
+                        text-align: center;
+                        padding: 0.5rem;
+                        border: none;
+                        &:first-child {
+                            background-color: $pale-purple;
+                            color: $white;
+                        }
+                        &:last-child {
+                            background-color: $light;
+                        }
                     }
                 }
             }
@@ -134,6 +189,13 @@
                             background-color: $light;
                         }
                     }
+                }
+                #setting-close {
+                    color: $black;
+                    padding: 4px 10px;
+                    background-color: $light;
+                    width: 1.75rem;
+                    height: 1.75rem;
                 }
             }
         }

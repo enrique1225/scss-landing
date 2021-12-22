@@ -95,6 +95,7 @@
             <form class="d-flex align-items-center">
                 <div class="me-3">
                     <img class="px-2 py-3" src="img/icon-search.svg" />
+                    <!-- Notification modal Start -->
                     <div class="tooltip-container">
                         <input type="radio" name="header-icon" class="notification-checked" id="notification-checked" />
                         <label class="header-icon" for="notification-checked">
@@ -108,44 +109,48 @@
                             <div class="content">
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/coach.svg" class="me-2" alt="coach">
-                                    <div>
+                                    <a href="">
                                         <p class="Bodymenulabeldate mb-0">Direct coach message</p>
                                         <p class="Bodytimestamp mb-0"><span class="direct-time">2 hrs</span> ago</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/content.svg" class="me-2" alt="content">
-                                    <div>
+                                    <a href="">
                                         <p class="Bodymenulabeldate mb-0">New feed content</p>
                                         <p class="Bodytimestamp mb-0"><span class="new-feed">2 hrs</span> ago</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/comment.svg" class="me-2" alt="comment">
-                                    <div>
+                                    <a href="">
                                         <p class="Bodymenulabeldate mb-0">New comment</p>
                                         <p class="Bodytimestamp mb-0"><span class="new-comment">2 hrs</span> ago</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/drillme.svg" class="me-2" alt="drillme">
-                                    <div>
+                                    <a href="">
                                         <p class="Bodymenulabeldate mb-0">Drill completion</p>
                                         <p class="Bodytimestamp mb-0"><span class="drill-me">2 hrs</span> ago</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <img class="px-2 py-3 me-3" src="img/icon-quick.svg" />
+                    <!-- Notification modal End -->
+                    <!-- Profile modal Start -->
                     <div class="tooltip-container me-1">
                         <input type="radio" name="header-icon" class="profile-checked" id="profile-checked" />
                         <label class="header-icon" for="profile-checked">
                             <div class="profile d-inline-block">
-                                <p class="nav-link Tablabel d-inline-block mb-0 user-name">Highland Hills Jaguars</p>
+                                <p class="Tablabel d-inline-block mb-0 me-3 user-name">Highland Hills Jaguars</p>
                                 <img src="img/profile.jpg" id="avatar" alt="profile-avatar">
                             </div>
                         </label>
+                        <input type="radio" class="profile-setting" name="profile-setting" id="ps">
+                        <!-- User Profile Modal Start -->
                         <div class="tooltip" id="profile-tooltip">
                             <header class="position-relative">
                                 <div class="d-flex align-items-center profile-header">
@@ -159,35 +164,62 @@
                             <div class="content">
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/icon-user.svg" class="me-2" alt="My profile">
-                                    <div>
-                                        <p class="Bodymenulabeldate mb-0">My profile</p>
-                                    </div>
+                                    <p class="Bodymenulabeldate mb-0">My profile</p>
                                 </div>
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/icon-bar.svg" class="me-2" alt="Tasks to review">
-                                    <div>
-                                        <p class="Bodymenulabeldate mb-0">Tasks to review</p>
-                                    </div>
+                                    <p class="Bodymenulabeldate mb-0">Tasks to review</p>
                                 </div>
                                 <div class="d-flex align-items-center notification">
                                     <img src="img/icon-message.svg" class="me-2" alt="Messages">
-                                    <div>
-                                        <p class="Bodymenulabeldate mb-0">Messages</p>
-                                    </div>
+                                    <p class="Bodymenulabeldate mb-0">Messages</p>
                                 </div>
-                                <div class="d-flex align-items-center notification">
-                                    <img src="img/icon-setting.svg" class="me-2" alt="Setting">
-                                    <div>
-                                        <p class="Bodymenulabeldate mb-0">Settings</p>
+                                <label for="ps">
+                                    <div class="d-flex align-items-center notification">
+                                        <img src="img/icon-setting.svg" class="me-2" alt="Setting">
+                                        <p class="Bodymenulabeldate mb-0">Settings</p>                                    
                                     </div>
-                                </div>
+                                </label>
                                 <div class="d-flex align-items-center justify-content-between signout">
                                     <button type="btn" class="text-uppercase buttonsmalllabel">sign out</button>
                                     <i class="fas fa-info-circle"></i>
                                 </div>
                             </div>
                         </div>
+                        <!-- User Profile Modal End -->
+                        <!-- MultiUser Profile Modal Start -->
+                        <div class="tooltip" id="multi-profile-tooltip">
+                            <header>
+                                <p class="Headline20Medium user-name">Beth Gormen</p>
+                            </header>
+                            <div class="content">
+                                <div class="d-flex align-items-center profile-user">
+                                    <img src="img/multi-profile.jpg" class="me-2" alt="My another profile">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
+                                        <p class="Bodymenulabeldate mb-0">bgormen@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center profile-user active">
+                                    <img src="img/profile.jpg" class="me-2" alt="My profile">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
+                                        <p class="Bodymenulabeldate mb-0">bgormenjags@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between signout">
+                                    <div>
+                                        <button type="btn" class="text-uppercase buttonsmalllabel me-2">change account</button>
+                                        <button type="btn" class="text-uppercase buttonsmalllabel">sign out</button>
+                                    </div>
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MultiUser Profile Modal End -->
                     </div>
+                    <!-- Profile modal End -->
+                    <!-- Timeline modal Start -->
                     <div class="tooltip-container">
                         <input type="radio" name="header-icon" class="setting-checked" id="setting-checked" />
                         <label class="header-icon" for="setting-checked">
@@ -199,7 +231,7 @@
                                     <button type="button" class="btn text-uppercase NavigationOffMobilePositive me-2">notifications</button>
                                     <button type="button" class="btn text-uppercase NavigationOffMobilePositive">settings</button>
                                 </div>
-                                <i class="fas fa-times"></i>
+                                <a id="setting-close" href=""><i class="fas fa-times"></i></a>
                             </header>
                             <div class="content">
                                 <ul class="timeline">
@@ -279,6 +311,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Timeline modal End -->
                 </div>
             </form>
         </div>
