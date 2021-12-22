@@ -35,12 +35,33 @@
         margin-left: 0;
         padding: 1rem;
     }
+    .tablet-bar {
+        position: absolute;
+        top: 18px;
+        right: 16px;
+        z-index: 9999;
+        &#tablet-sidebar-open {
+            display: block;
+        }
+    }
+    .tablet-profile {
+        position: absolute;
+        top: 18px;
+        right: 42px;
+        z-index: 9999;
+    }
     #tablet-hamburger-open {
         &:checked~ {
             #sidebar {
                 display: block;
                 width: 100%;
                 height: auto;
+            }
+            #tablet-sidebar-open {
+                display: none;
+            }
+            #tablet-sidebar-close {
+                display: block;
             }
         }
     }

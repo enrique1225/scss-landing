@@ -87,15 +87,9 @@
 }
 
 //... navbar hamburger
+#tablet-sidebar-close,
 #tablet-sidebar-open,
-#tablet-sidebar-close {
-    cursor: pointer;
-}
-
-#tablet-sidebar-close {
-    display: none;
-}
-
 #tablet-hamburger-open {
     display: none;
+    cursor: pointer;
 }

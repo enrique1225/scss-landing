@@ -23,10 +23,22 @@
 </head>
 
 <body>
-    <!-- Sidebar Start -->
+    <!-- Control sidebar with sidebar&navbar hamburger buttons Start -->
     <input type="checkbox" class="hamburger-checked" name="accordion" id="cb0" />
-    <label for="cb0" id="hamburger"><img src="img/hamburger.jpg" alt="close sidebar"></label>
+    <label for="cb0" id="hamburger">
+        <img src="img/hamburger.jpg" alt="close sidebar">
+    </label>
+
     <input type="checkbox" id="tablet-hamburger-open" />
+    <label id="tablet-sidebar-close" class="tablet-bar" for="tablet-hamburger-open">
+        <img src="img/close.jpg" width="30" alt="close">
+    </label>
+    <label id="tablet-sidebar-open" class="tablet-bar" for="tablet-hamburger-open">
+        <img src="img/hamburger.jpg" width="30" alt="open">
+    </label>
+    <!-- Control sidebar with sidebar&navbar hamburger buttons End -->
+
+    <!-- Sidebar Start -->
     <div id="sidebar">
         <header>
             <img src="img/logo.jpg" id="admin-logo" alt="logo">
@@ -100,6 +112,7 @@
         </section>
     </div>
     <!-- Sidebar End -->
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand admin-nav">
         <div class="navbar-collapse" id="navbarSupportedContent">
@@ -117,6 +130,7 @@
                     <span class="nav-link Tablabel p-0">Account</span>
                 </li>
             </ul>
+
             <!-- Desktop icon groups Start-->
             <div class="d-none align-items-center d-lg-flex">
                 <div class="me-3">
@@ -341,20 +355,16 @@
                 </div>
             </div>
             <!-- Desktop icon groups End-->
+
             <!-- Tablet, Mobile icon groups Start -->
-            <div class="d-lg-none d-flex">
+            <div class="d-lg-none d-flex tablet-profile">
                 <img src="img/profile.jpg" width="30" class="me-3 rounded-circle" alt="profile avatar">
-                <label id="tablet-sidebar-open" for="tablet-hamburger-open">
-                    <img src="img/hamburger.jpg" width="30" alt="open">
-                </label>
-                <label id="tablet-sidebar-close" for="tablet-hamburger-open">
-                    <img src="img/close.jpg" width="30" alt="close">
-                </label>
             </div>
             <!-- Tablet, Mobile icon groups End -->
         </div>
     </nav>
     <!-- Navbar End -->
+
     <!-- Main content Start -->
     <div id="main-content">
         <!-- New post Start -->

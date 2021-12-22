@@ -16,19 +16,20 @@
                 transform: scale(1);
             }
             label {
-                background-color: rgba(73, 72, 80, 0.05);
+                background-color: rgb(151 136 151 / 24%);
             }
         }
     }
     .profile-checked {
         display: none;
         &:checked~ {
-            .profile {
-                background-color: rgb(151 136 151 / 28%)!important;
-            }
             #profile-tooltip {
                 opacity: 1;
                 transform: scale(1);
+            }
+            .header-icon {
+                background-color: rgb(151 136 151 / 28%);
+                border-radius: 20px;
             }
         }
     }
@@ -63,10 +64,15 @@
         right: calc(50% - 140px);
         transition: all .2s ease-in-out;
         transform: scale(0);
+        header {
+            background-color: $dark-blue-grey;
+        }
+        .content {
+            padding: 2rem 0 0;
+        }
         &#notification-tooltip {
-            top: 80px;
+            top: 71px;
             header {
-                background-color: $dark-blue-grey;
                 padding: 1.5rem 0 2.25rem;
                 .new-notification {
                     background-color: $white;
@@ -79,8 +85,6 @@
                 }
             }
             .content {
-                padding: 2rem 0 0;
-                box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
                 .notification {
                     border-bottom: solid 1px $tile;
                     padding: 1rem;
@@ -88,9 +92,8 @@
             }
         }
         &#profile-tooltip {
-            top: 81px;
+            top: 72px;
             header {
-                background-color: $dark-blue-grey;
                 padding: 1.5rem 0 0.5rem;
                 height: 3.6rem;
                 .profile-header {
@@ -103,8 +106,6 @@
                 }
             }
             .content {
-                padding: 2rem 0 0;
-                box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
                 .notification {
                     padding: 0.5rem 1rem;
                     &:last-child {
@@ -129,15 +130,13 @@
             }
         }
         &#multi-profile-tooltip {
-            top: 81px;
+            top: 72px;
             header {
-                background-color: $dark-blue-grey;
                 padding: 1rem;
                 height: 3.6rem;
             }
             .content {
                 padding: 0;
-                box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
                 .profile-user {
                     padding: 0.5rem 1rem;
                     cursor: pointer;
@@ -174,6 +173,7 @@
             width: 26.563rem;
             background-color: #fbfbfb;
             header {
+                background-color: #fbfbfb;
                 border-bottom: 1px solid $tile;
                 .setting-buttons {
                     .btn {
