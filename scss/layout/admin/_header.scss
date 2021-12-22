@@ -8,7 +8,10 @@
     .navbar-nav {
         .nav-link {
             margin-right: 3.5rem;
-            color: $charcoal-grey;
+            &:hover,
+            &:focus {
+                color: $pale-purple;
+            }
         }
     }
     .tooltip-container .profile {

@@ -25,12 +25,34 @@
 <body>
     <!-- Sidebar Start -->
     <input type="checkbox" class="hamburger-checked" name="accordion" id="cb0" />
-    <label for="cb0" id="hamburger"><img src="img/hamburger.jpg" alt="hamburger"></label>
+    <label for="cb0" id="hamburger"><img src="img/hamburger.jpg" alt="close sidebar"></label>
+    <input type="checkbox" id="tablet-hamburger-open" />
     <div id="sidebar">
         <header>
-            <img src="img/logo.jpg" id="admin-logo">
+            <img src="img/logo.jpg" id="admin-logo" alt="logo">
             <label for="cb0"><img src="img/footer-logo.png" width="30" id="admin-small-logo" alt="logo"></label>
         </header>
+        <!-- Tablet, Mobile Tools Start -->
+        <div class="d-lg-none">
+            <h5 class="Bodymenulabeldate text-uppercase">tools</h5>
+            <section class="box">
+                <img src="img/icon-search.svg" alt="search">
+                <span class="box-title Navigationlistlink">Search</span>
+            </section>
+            <section class="box">
+                <img src="img/icon-alarm.svg" alt="notification">
+                <span class="box-title Navigationlistlink">Notification</span>
+            </section>
+            <section class="box">
+                <img src="img/icon-quick.svg" alt="actions">
+                <span class="box-title Navigationlistlink">Actions</span>
+            </section>
+            <section class="box">
+                <img src="img/icon-setting.svg" alt="settings">
+                <span class="box-title Navigationlistlink">Event timeline</span>
+            </section>
+        </div>
+        <!-- Tablet, Mobile Tools End -->
         <h5 class="Bodymenulabeldate text-uppercase">teams</h5>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb1" />
         <section class="box">
@@ -83,16 +105,16 @@
         <div class="navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-0 align-items-center">
                 <li class="nav-item d-lg-none">
-                    <a class="me-5 d-block" href=""><img src="img/footer-logo.png" width="30" alt="logo"></a>
+                    <span class="me-4 d-block"><img src="img/footer-logo.png" width="30" alt="logo"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link Tablabel p-0" href="#">Feed</a>
+                    <span class="nav-link Tablabel p-0">Feed</span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link Tablabel p-0" href="#">Milestones</a>
+                    <span class="nav-link Tablabel p-0">Milestones</span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link Tablabel p-0" href="#" tabindex="-1" aria-disabled="true">Account</a>
+                    <span class="nav-link Tablabel p-0">Account</span>
                 </li>
             </ul>
             <!-- Desktop icon groups Start-->
@@ -103,7 +125,7 @@
                     <div class="tooltip-container">
                         <input type="radio" name="header-icon" class="notification-checked" id="notification-checked" />
                         <label class="header-icon" for="notification-checked">
-                            <img src="img/icon-alarm.svg" alt="alarm">
+                            <img src="img/icon-alarm.svg" alt="notification">
                         </label>
                         <div class="tooltip" id="notification-tooltip">
                             <header class="text-center position-relative">
@@ -112,28 +134,28 @@
                             </header>
                             <div class="content">
                                 <div class="d-flex align-items-center notification">
-                                    <img src="img/coach.svg" class="me-2" alt="coach">
+                                    <img src="img/coach.svg" class="me-2" alt="Direct coach message">
                                     <a href="">
                                         <p class="Bodymenulabeldate mb-0">Direct coach message</p>
                                         <p class="Bodytimestamp mb-0"><span class="direct-time">2 hrs</span> ago</p>
                                     </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
-                                    <img src="img/content.svg" class="me-2" alt="content">
+                                    <img src="img/content.svg" class="me-2" alt="New feed content">
                                     <a href="">
                                         <p class="Bodymenulabeldate mb-0">New feed content</p>
                                         <p class="Bodytimestamp mb-0"><span class="new-feed">2 hrs</span> ago</p>
                                     </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
-                                    <img src="img/comment.svg" class="me-2" alt="comment">
+                                    <img src="img/comment.svg" class="me-2" alt="New comment">
                                     <a href="">
                                         <p class="Bodymenulabeldate mb-0">New comment</p>
                                         <p class="Bodytimestamp mb-0"><span class="new-comment">2 hrs</span> ago</p>
                                     </a>
                                 </div>
                                 <div class="d-flex align-items-center notification">
-                                    <img src="img/drillme.svg" class="me-2" alt="drillme">
+                                    <img src="img/drillme.svg" class="me-2" alt="Drill completion">
                                     <a href="">
                                         <p class="Bodymenulabeldate mb-0">Drill completion</p>
                                         <p class="Bodytimestamp mb-0"><span class="drill-me">2 hrs</span> ago</p>
@@ -150,7 +172,7 @@
                         <label class="header-icon" for="profile-checked">
                             <div class="profile d-inline-block">
                                 <p class="Tablabel d-inline-block mb-0 me-3 user-name">Highland Hills Jaguars</p>
-                                <img src="img/profile.jpg" id="avatar" alt="profile-avatar">
+                                <img src="img/profile.jpg" id="avatar" alt="profile avatar">
                             </div>
                         </label>
                         <input type="radio" class="profile-setting" name="profile-setting" id="ps">
@@ -158,7 +180,7 @@
                         <div class="tooltip" id="profile-tooltip">
                             <header class="position-relative">
                                 <div class="d-flex align-items-center profile-header">
-                                    <img src="img/profile.jpg" class="me-3" alt="avatar">
+                                    <img src="img/profile.jpg" class="me-3" alt="profile avatar">
                                     <div>
                                         <p class="Headline20Medium user-name">Beth Bormen</p>
                                         <p class="user-role Tabstatic mb-0">Club Director</p>
@@ -240,7 +262,7 @@
                             <div class="content">
                                 <ul class="timeline">
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge success"><img src="img/icon-content.svg"></div>
+                                        <div class="timeline-badge success"><img src="img/icon-content.svg" alt="article"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -252,7 +274,7 @@
                                         </div>
                                     </li>
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge danger"><img src="img/icon-video.svg"></div>
+                                        <div class="timeline-badge danger"><img src="img/icon-video.svg" alt="video"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -264,7 +286,7 @@
                                         </div>
                                     </li>
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge primary"><img src="img/icon-game.svg"></div>
+                                        <div class="timeline-badge primary"><img src="img/icon-game.svg" alt="game"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -276,7 +298,7 @@
                                         </div>
                                     </li>
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge warning"><img src="img/icon-drill.svg"></div>
+                                        <div class="timeline-badge warning"><img src="img/icon-drill.svg" alt="drill"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -288,7 +310,7 @@
                                         </div>
                                     </li>
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge primary"><img src="img/icon-game.svg"></div>
+                                        <div class="timeline-badge primary"><img src="img/icon-game.svg" alt="game"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -300,7 +322,7 @@
                                         </div>
                                     </li>
                                     <li class="timeline-inverted">
-                                        <div class="timeline-badge success"><img src="img/icon-content.svg"></div>
+                                        <div class="timeline-badge success"><img src="img/icon-content.svg" alt="article"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading my-3">
                                                 <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
@@ -321,8 +343,13 @@
             <!-- Desktop icon groups End-->
             <!-- Tablet, Mobile icon groups Start -->
             <div class="d-lg-none d-flex">
-                <img src="img/profile.jpg" width="30" class="me-3 rounded-circle" alt="profile-avatar">
-                <img src="img/hamburger.jpg" width="30" class="me-3" alt="hamburger">
+                <img src="img/profile.jpg" width="30" class="me-3 rounded-circle" alt="profile avatar">
+                <label id="tablet-sidebar-open" for="tablet-hamburger-open">
+                    <img src="img/hamburger.jpg" width="30" alt="open">
+                </label>
+                <label id="tablet-sidebar-close" for="tablet-hamburger-open">
+                    <img src="img/close.jpg" width="30" alt="close">
+                </label>
             </div>
             <!-- Tablet, Mobile icon groups End -->
         </div>
@@ -340,10 +367,10 @@
                         <img src="img/camera.jpg">
                     </div>
                     <div class="d-lg-flex d-block">
-                        <div class="message-control"><img src="img/icon-content.svg" class="me-2" /> <span>Written / Photo</span></div>
-                        <div class="message-control"><img src="img/icon-video.svg" class="me-2" /> <span>Video</span> </div>
-                        <div class="message-control"><img src="img/icon-game.svg" class="me-2" /> <span>Game</span> </div>
-                        <div class="message-control"><img src="img/icon-drill.svg" class="me-2" /> <span>Drill</span> </div>
+                        <div class="message-control"><img src="img/icon-content.svg" class="me-2" alt="article" /> <span>Written / Photo</span></div>
+                        <div class="message-control"><img src="img/icon-video.svg" class="me-2" alt="video" /> <span>Video</span> </div>
+                        <div class="message-control"><img src="img/icon-game.svg" class="me-2" alt="game" /> <span>Game</span> </div>
+                        <div class="message-control"><img src="img/icon-drill.svg" class="me-2" alt="drill" /> <span>Drill</span> </div>
                     </div>
                 </div>
             </div>

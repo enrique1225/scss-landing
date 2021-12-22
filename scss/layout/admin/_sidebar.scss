@@ -38,7 +38,7 @@
                 display: block;
                 content: '\203a';
                 font-size: 1rem;
-                right: 20px;
+                right: 30px;
                 top: -8px;
                 transition: transform .15s ease-in-out;
             }
@@ -56,6 +56,10 @@
         i {
             color: $purpley-grey;
             line-height: 2;
+        }
+        img {
+            width: 1rem;
+            height: 2rem;
         }
     }
     .accordion_input {
@@ -77,47 +81,21 @@
     }
 }
 
-#hamburger {
-    position: absolute;
-    color: $light;
-    left: 215px;
-    top: 22px;
-    z-index: 9999;
-    cursor: pointer;
-    img {
-        width: 26px;
-    }
-}
-
+//... sidebar hamburger
 .hamburger-checked {
     display: none;
-    &:checked~ {
-        #hamburger {
-            display: none;
-        }
-        #sidebar {
-            width: 4rem;
-            header {
-                #admin-logo {
-                    display: none;
-                }
-                #admin-small-logo {
-                    display: block;
-                }
-            }
-            section {
-                padding-left: 0;
-                text-align: center;
-                .box-title,
-                .box-content {
-                    display: none!important;
-                }
-            }
-        }
-        #main-content,
-        .admin-nav {
-            width: calc(100% - 4rem);
-            margin-left: 4rem;
-        }
-    }
+}
+
+//... navbar hamburger
+#tablet-sidebar-open,
+#tablet-sidebar-close {
+    cursor: pointer;
+}
+
+#tablet-sidebar-close {
+    display: none;
+}
+
+#tablet-hamburger-open {
+    display: none;
 }
