@@ -11,9 +11,24 @@
     }
     .homebar-checked {
         display: none;
-        &:checked~#navbarCollapse {
-            display: block;
+        &:checked~ {
+            #navbarCollapse {
+                display: block;
+            }
+            #mobile-navbar-open {
+                display: none;
+            }
+            #mobile-navbar-close {
+                display: block;
+            }
         }
+    }
+    .mobile-bar {
+        position: absolute;
+        top: 32px;
+        right: 12px;
+        z-index: 9999;
+        display: none;
     }
     .navbar-nav {
         .nav-link {
