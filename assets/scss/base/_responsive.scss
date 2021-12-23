@@ -17,8 +17,13 @@
     #hamburger {
         display: none;
     }
-    .home-nav #mobile-navbar-open {
-        display: block;
+    .home-nav {
+        #mobile-navbar-open {
+            display: block;
+        }
+        .navbar-brand #logo {
+            padding: 0;
+        }
     }
     #sidebar {
         display: none;
@@ -30,7 +35,7 @@
         background-color: $dark-blue-grey;
         .navbar-nav .nav-item {
             color: $white;
-            margin-right: 1.5rem;
+            margin-right: 0;
         }
     }
     #main-content {
@@ -144,9 +149,6 @@
         min-width: unset;
         padding: 0.5rem 1rem;
         font-size: 1rem;
-    }
-    .home-nav .navbar-brand #logo {
-        padding: 0;
     }
     .Headlineform {
         font-size: 3rem;
