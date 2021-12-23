@@ -29,6 +29,9 @@
         padding-left: 1.5rem;
         position: relative;
         transition: all .15s ease-in-out;
+        &.active {
+            background-color: $black;
+        }
         .box-title {
             padding: 0 0.75rem;
             color: $light;

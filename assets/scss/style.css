@@ -645,6 +645,9 @@ body {
   position: relative;
   transition: all 0.15s ease-in-out;
 }
+#sidebar section.active {
+  background-color: #0a060e;
+}
 #sidebar section .box-title {
   padding: 0 0.75rem;
   color: #f5f1f9;
