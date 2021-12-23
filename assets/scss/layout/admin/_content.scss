@@ -31,7 +31,7 @@
             i {
                 padding: 7px;
                 border-radius: 50%;
-                background-color: rgba(151, 136, 151, 0.1);
+                background-color: rgba($purpley-grey, 0.1);
                 cursor: pointer;
                 &.type-article {
                     color: $success;
