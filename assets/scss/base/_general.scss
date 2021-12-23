@@ -81,6 +81,11 @@ body {
         background-color: $light-danger;
         min-width: 6.5rem;
     }
+    &.primaryBtn {
+        color: $primary;
+        background-color: $light-primary;
+        min-width: 6.5rem;
+    }
 }
 
 .form-check-input {

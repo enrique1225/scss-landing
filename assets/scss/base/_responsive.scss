@@ -184,7 +184,9 @@
             text-align: center;
             #season-carousel,
             select {
-                width: 100%;
+                width: 300px;
+                float: unset;
+                margin: auto;
             }
         }
         .season-block-content .card {
@@ -201,16 +203,18 @@
     .carousel-inner .carousel-container {
         padding: 0;
     }
-    .btn.transparentBtn,
-    .btn.purpleBtn {
-        min-width: unset;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-    .btn.greyBtn {
-        width: 150px;
-        margin: 20px auto 0;
-        text-align: center;
+    .btn {
+        &.transparentBtn,
+        &.purpleBtn {
+            min-width: unset;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+        &.greyBtn {
+            width: 150px;
+            margin: 20px auto 0;
+            text-align: center;
+        }
     }
     .Headlineform {
         font-size: 3rem;
@@ -229,6 +233,14 @@
             iframe {
                 height: 300px;
             }
+            .season-block-header {
+                select {
+                    width: 300px;
+                }
+            }
+        }
+        .season-table .season-action {
+            width: 95%;
         }
         #org-header {
             ul {

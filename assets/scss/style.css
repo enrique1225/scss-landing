@@ -456,6 +456,11 @@ body {
   background-color: #ffecf2;
   min-width: 6.5rem;
 }
+.btn.primaryBtn {
+  color: #5d78ff;
+  background-color: #eff2ff;
+  min-width: 6.5rem;
+}
 
 .form-check-input:checked {
   background-color: #b18fcf;
@@ -664,6 +669,9 @@ body {
   right: 30px;
   top: -8px;
   transition: transform 0.15s ease-in-out;
+}
+#sidebar section .box-title a {
+  color: #fff;
 }
 #sidebar section .box-content {
   width: calc(100% - 40px);
@@ -889,6 +897,7 @@ footer {
 }
 #main-content #org-header ul {
   margin-bottom: 0;
+  padding-left: 1rem;
   list-style: "✓";
   text-indent: 0.5rem;
 }
@@ -900,6 +909,19 @@ footer {
 }
 #main-content .season-table .season-action p {
   width: 180px;
+}
+#main-content .season-table table .season-table-number {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #978897;
+  color: #fff;
+  border-radius: 50%;
+}
+#main-content .season-table table .form-check {
+  padding-left: 2.5rem;
+}
+#main-content .season-table i {
+  font-size: 1.5rem;
 }
 
 .carousel-inner {
@@ -1503,7 +1525,9 @@ footer {
   }
   #main-content .season-block-header #season-carousel,
 #main-content .season-block-header select {
-    width: 100%;
+    width: 300px;
+    float: unset;
+    margin: auto;
   }
   #main-content .season-block-content .card {
     width: 100%;
@@ -1519,13 +1543,11 @@ footer {
     padding: 0;
   }
 
-  .btn.transparentBtn,
-.btn.purpleBtn {
+  .btn.transparentBtn, .btn.purpleBtn {
     min-width: unset;
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
-
   .btn.greyBtn {
     width: 150px;
     margin: 20px auto 0;
@@ -1550,6 +1572,12 @@ footer {
 
   #main-content .message-block iframe {
     height: 300px;
+  }
+  #main-content .message-block .season-block-header select {
+    width: 300px;
+  }
+  #main-content .season-table .season-action {
+    width: 95%;
   }
   #main-content #org-header ul {
     width: 200px;

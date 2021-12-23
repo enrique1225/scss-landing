@@ -70,7 +70,7 @@
         <!-- Tablet, Mobile Tools End -->
         <h5 class="Bodymenulabeldate text-uppercase">teams</h5>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb1" />
-        <section class="box">
+        <section class="box active">
             <i class="fas fa-layer-group"></i>
             <label class="box-title Navigationlistlink hasChild" for="cb1">Live on platform</label>
             <ul class="box-content">
@@ -109,9 +109,11 @@
         </section>
         <h5 class="Bodymenulabeldate text-uppercase">fees</h5>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb5" />
-        <section class="box active">
-            <i class="fas fa-dollar-sign"></i>
-            <label class="box-title Navigationlistlink" for="cb5">Account types</label>
+        <section class="box">
+            <a href="account.html"><i class="fas fa-dollar-sign"></i></a>
+            <label class="box-title Navigationlistlink" for="cb5">
+            <a href="account.html">Account types</a>
+        </label>
         </section>
     </div>
     <!-- Sidebar End -->
@@ -124,7 +126,6 @@
                     <a class="me-2 me-sm-4 d-block" href="index.html"><img src="../assets/img/black-logo.png" width="30" alt="logo"></a>
                 </li>
                 <li class="nav-item">
-
                     <!-- Feed modal Start -->
                     <div class="tooltip-container">
                         <input type="checkbox" class="feed-checked" id="feed-checked" />
@@ -166,8 +167,8 @@
                 <li class="nav-item">
                     <a class="Tablabel" href="">Milestones</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="Tablabel" href="">Account</a>
+                <li class="nav-item">
+                    <a class="Tablabel" href="account.html">Account</a>
                 </li>
             </ul>
 
@@ -456,13 +457,146 @@
                 </div>
             </div>
         </div>
+        <!-- Spring Table Start -->
         <div class="season-table bg-white mt-3">
-            <div class="p-4 d-flex align-items-center justify-content-between">
+            <div class="px-0 px-md-4 pt-4 pb-0 d-block d-md-flex align-items-center justify-content-between text-center">
                 <div class="py-2 d-inline-block">
                     <h5 class="Headline20MediumPositive me-2 d-inline-block">8U</h5>
                     <h5 class="Tablabel d-inline-block">21-22 Spring Season</h5>
                 </div>
-                <div class="d-flex align-items-center season-action">
+                <div class="d-flex align-items-center season-action m-md-0 m-auto">
+                    <p class="Tableheading mb-0">2 Selected</p>
+                    <select class="form-select Bodymenulabel me-3">
+                        <option value="">Select action</option>
+                        <option value="1">Make team inactive</option>
+                        <option value="2">Make team active</option>
+                        <option value="3">Upgrade to Pro</option>
+                        <option value="4">Switch to Standard</option>
+                        <option value="5">Duplicate Team(s)</option>
+                    </select>
+                    <button type="button" class="btn purpleBtn NavigationOffMobile px-4 px-5 py-2 d-inline-block"><b>Apply</b></button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="Tableheading">Team name</th>
+                            <th class="Tableheading">Coaches/Athletes</th>
+                            <th class="Tableheading">Managed by</th>
+                            <th class="Tableheading">Visibility</th>
+                            <th class="Tableheading">Date created</th>
+                            <th class="Tableheading">Type</th>
+                            <th class="Tableheading">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-2" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">1/12</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
+                <div class="py-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-plus-circle me-3"></i>
+                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                </div>
+                <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
+            </div>
+        </div>
+        <!-- Spring Table End -->
+
+        <!-- Summer Table Start -->
+        <div class="season-table bg-white mt-3">
+            <div class="px-0 px-md-4 pt-4 pb-0 d-block d-md-flex align-items-center justify-content-between text-center">
+                <div class="py-2 d-inline-block">
+                    <h5 class="Headline20MediumPositive me-2 d-inline-block">8U</h5>
+                    <h5 class="Tablabel d-inline-block">21-22 Summer Season</h5>
+                </div>
+                <div class="d-flex align-items-center season-action m-md-0 m-auto">
                     <p class="Tableheading mb-0">2 Selected</p>
                     <select class="form-select Bodymenulabel me-3">
                         <option value="">Select action</option>
@@ -475,7 +609,249 @@
                     <button type="button" class="btn purpleBtn NavigationOffMobile px-5 py-2 d-inline-block"><b>Apply</b></button>
                 </div>
             </div>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="Tableheading">Team name</th>
+                            <th class="Tableheading">Coaches/Athletes</th>
+                            <th class="Tableheading">Managed by</th>
+                            <th class="Tableheading">Visibility</th>
+                            <th class="Tableheading">Date created</th>
+                            <th class="Tableheading">Type</th>
+                            <th class="Tableheading">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-2" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">1/12</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
+                <div class="py-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-plus-circle me-3"></i>
+                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                </div>
+                <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
+            </div>
         </div>
+        <!-- Summer Table End -->
+
+        <!-- Winter Table Start -->
+        <div class="season-table bg-white mt-3">
+            <div class="px-0 px-md-4 pt-4 pb-0 d-block d-md-flex align-items-center justify-content-between text-center">
+                <div class="py-2 d-inline-block">
+                    <h5 class="Headline20MediumPositive me-2 d-inline-block">8U</h5>
+                    <h5 class="Tablabel d-inline-block">21-22 Winter Season</h5>
+                </div>
+                <div class="d-flex align-items-center season-action m-md-0 m-auto">
+                    <p class="Tableheading mb-0">2 Selected</p>
+                    <select class="form-select Bodymenulabel me-3">
+                        <option value="">Select action</option>
+                        <option value="1">Make team inactive</option>
+                        <option value="2">Make team active</option>
+                        <option value="3">Upgrade to Pro</option>
+                        <option value="4">Switch to Standard</option>
+                        <option value="5">Duplicate Team(s)</option>
+                    </select>
+                    <button type="button" class="btn purpleBtn NavigationOffMobile px-5 py-2 d-inline-block"><b>Apply</b></button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="Tableheading">Team name</th>
+                            <th class="Tableheading">Coaches/Athletes</th>
+                            <th class="Tableheading">Managed by</th>
+                            <th class="Tableheading">Visibility</th>
+                            <th class="Tableheading">Date created</th>
+                            <th class="Tableheading">Type</th>
+                            <th class="Tableheading">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-2" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">1/12</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </th>
+                            <td>
+                                <span class="Listchecks d-inline-block text-center season-table-number">8U</span>
+                            </td>
+                            <td class="Tablabel">2/16</td>
+                            <td class="Tablabel">Ken Booth </td>
+                            <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
+                            <td class="Tablabel">February 10, 2021</td>
+                            <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
+                            <td class="Tablabel">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
+                <div class="py-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-plus-circle me-3"></i>
+                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                </div>
+                <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
+            </div>
+        </div>
+        <!-- Winter Table End -->
     </div>
     <!-- Main content End -->
 

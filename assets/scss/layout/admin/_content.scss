@@ -162,6 +162,7 @@
         }
         ul {
             margin-bottom: 0;
+            padding-left: 1rem;
             list-style: "\2713";
             text-indent: 0.5rem;
             li::marker {
@@ -175,6 +176,21 @@
             p {
                 width: 180px;
             }
+        }
+        table {
+            .season-table-number {
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $purpley-grey;
+                color: $white;
+                border-radius: 50%;
+            }
+            .form-check {
+                padding-left: 2.5rem;
+            }
+        }
+        i {
+            font-size: 1.5rem;
         }
     }
 }

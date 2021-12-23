@@ -45,6 +45,9 @@
                 top: -8px;
                 transition: transform .15s ease-in-out;
             }
+            a {
+                color: $white;
+            }
         }
         .box-content {
             width: calc(100% - 40px);
