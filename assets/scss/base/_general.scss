@@ -19,6 +19,10 @@ body {
     background-color: $dark-purple;
 }
 
+.bg-purple-grey {
+    background-color: rgba($purpley-grey, 0.1);
+}
+
 .text-left {
     text-align: left;
 }
@@ -27,63 +31,70 @@ body {
     text-align: right;
 }
 
-.btn.purpleBtn {
-    min-width: 11.563rem;
-    padding: 0.688rem 2rem 0.938rem;
-    border-radius: 25px;
-    background-color: $pale-purple;
-    &:hover {
-        color: $white;
-    }
+.border-radius-25 {
+    border-radius: 25px!important;
 }
 
-.btn.transparentBtn {
-    min-width: 11.563rem;
-    padding: 0.688rem 2rem 0.938rem;
-    border-radius: 25px;
-    background-color: $transparent;
-    border: 1px solid $pale-purple;
-    &:hover {
-        color: $white;
+.btn {
+    border-radius: 3px;
+    &.purpleBtn {
+        min-width: 11.563rem;
         background-color: $pale-purple;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.transparentBtn {
+        min-width: 11.563rem;
+        background-color: $transparent;
+        border: 1px solid $pale-purple;
+        &:hover {
+            color: $white;
+            background-color: $pale-purple;
+        }
+    }
+    &.greyBtn {
+        padding: 0.4rem 1rem;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba($purpley-grey, 0.1);
+        font-size: 0.75rem;
+        color: $dark-blue-grey;
+        display: inline-block;
+        margin: 20px 10px 0 0;
+        cursor: pointer;
+        img {
+            width: 0.8rem;
+        }
+    }
+    &.successBtn {
+        color: $success;
+        background-color: $light-success;
+        min-width: 6.5rem;
+    }
+    &.dangerBtn {
+        color: $danger;
+        background-color: $light-danger;
+        min-width: 6.5rem;
     }
 }
 
-.btn.greyBtn {
-    padding: 0.4rem 1rem;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgba($black, 0.3);
-    background-color: rgba($purpley-grey, 0.1);
-    font-size: 0.75rem;
-    color: $dark-blue-grey;
-    display: inline-block;
-    margin: 20px 10px 0 0;
-    cursor: pointer;
-    img {
-        width: 0.8rem;
+.form-check-input {
+    &:checked {
+        background-color: $pale-purple;
+        border-color: $pale-purple;
     }
-}
-
-.form-check-input:checked {
-    background-color: $pale-purple;
-    border-color: $pale-purple;
-}
-
-.form-check-input:focus {
-    border-color: $pale-purple;
-    outline: 0;
-    box-shadow: none;
+    &:focus {
+        border-color: $pale-purple;
+        outline: 0;
+        box-shadow: none;
+    }
 }
 
 .p-50 {
     padding: 0.719rem 1.157rem 0.844rem 1.116rem;
     border-radius: 3px;
     height: 50px;
-}
-
-.bg-purple-grey {
-    background-color: rgba($purpley-grey, 0.1);
 }
 
 @keyframes fadeIn {
@@ -117,7 +128,6 @@ body {
     .input-group-text {
         background-color: transparent;
         border: 1px solid rgba($charcoal-grey, 0.19);
-        ;
         border-radius: 3px;
         border-right: none;
         img {

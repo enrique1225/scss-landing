@@ -3,6 +3,7 @@
     margin-left: 15.938rem;
     padding: 1.406rem 1.5rem 1.344rem;
     background-color: $secondary;
+    //... admin index page
     .message-block {
         border-radius: 3px;
         border-bottom: 1px solid $tile;
@@ -89,6 +90,61 @@
             background-color: $light-warning;
             height: 35px;
             width: 35px;
+        }
+    }
+    //... admin account page
+    .season-block-header {
+        border-top: 1px solid $tile;
+        #season-carousel {
+            span {
+                display: inline-block;
+                padding: 0.8rem 0;
+                &:first-child {
+                    border-bottom: 2px solid $pale-purple;
+                }
+            }
+        }
+        select {
+            width: 16.75rem;
+            background-color: transparent;
+        }
+    }
+    .season-block-content {
+        .card {
+            width: 32%;
+            margin-right: 2%;
+            border-radius: 3px;
+            box-shadow: 0 0 10px 0 rgba($white, 0.05);
+            &:last-child {
+                margin-right: 0;
+            }
+            .card-header,
+            .card-footer {
+                border: none;
+            }
+            .card-body {
+                .team-block {
+                    border-bottom: 1px solid $tile;
+                    padding: 1rem 1.5rem;
+                    &:first-child {
+                        h5 {
+                            &:last-child {
+                                margin-right: 3rem;
+                            }
+                        }
+                    }
+                    .team-number {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: $purpley-grey;
+                        color: $white;
+                        border-radius: 50%;
+                    }
+                    .btn {
+                        float: right;
+                    }
+                }
+            }
         }
     }
 }

@@ -363,7 +363,7 @@
 
 .buttonsmalllabel {
   font-family: Barlow;
-  font-size: 0.563rem;
+  font-size: 0.5rem;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -394,6 +394,10 @@ body {
   background-color: #29183a;
 }
 
+.bg-purple-grey {
+  background-color: rgba(151, 136, 151, 0.1);
+}
+
 .text-left {
   text-align: left;
 }
@@ -402,20 +406,22 @@ body {
   text-align: right;
 }
 
+.border-radius-25 {
+  border-radius: 25px !important;
+}
+
+.btn {
+  border-radius: 3px;
+}
 .btn.purpleBtn {
   min-width: 11.563rem;
-  padding: 0.688rem 2rem 0.938rem;
-  border-radius: 25px;
   background-color: #b18fcf;
 }
 .btn.purpleBtn:hover {
   color: #fff;
 }
-
 .btn.transparentBtn {
   min-width: 11.563rem;
-  padding: 0.688rem 2rem 0.938rem;
-  border-radius: 25px;
   background-color: transparent;
   border: 1px solid #b18fcf;
 }
@@ -423,12 +429,10 @@ body {
   color: #fff;
   background-color: #b18fcf;
 }
-
 .btn.greyBtn {
   padding: 0.4rem 1rem;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 0 10px 0 rgba(10, 6, 14, 0.3);
   background-color: rgba(151, 136, 151, 0.1);
   font-size: 0.75rem;
   color: #10182c;
@@ -439,12 +443,21 @@ body {
 .btn.greyBtn img {
   width: 0.8rem;
 }
+.btn.successBtn {
+  color: #61cab8;
+  background-color: #eafaf8;
+  min-width: 6.5rem;
+}
+.btn.dangerBtn {
+  color: #fd397a;
+  background-color: #ffecf2;
+  min-width: 6.5rem;
+}
 
 .form-check-input:checked {
   background-color: #b18fcf;
   border-color: #b18fcf;
 }
-
 .form-check-input:focus {
   border-color: #b18fcf;
   outline: 0;
@@ -455,10 +468,6 @@ body {
   padding: 0.719rem 1.157rem 0.844rem 1.116rem;
   border-radius: 3px;
   height: 50px;
-}
-
-.bg-purple-grey {
-  background-color: rgba(151, 136, 151, 0.1);
 }
 
 @keyframes fadeIn {
@@ -553,6 +562,9 @@ body {
   border: 1px solid #b18fcf;
   color: #fff;
   padding: 0.375rem 2.313rem 0.438rem 2.25rem;
+}
+.home-nav .navbar-nav .nav-link .signin-btn:hover {
+  background-color: #b18fcf;
 }
 .home-nav .navbar-nav .nav-link.active {
   color: #b18fcf;
@@ -696,7 +708,7 @@ body {
   margin-left: 15.938rem;
   padding: 1.406rem 0 1.344rem 1.5rem;
   background-color: #fff;
-  box-shadow: 0 2px 10px 0 rgba(10, 6, 14, 0.05);
+  box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.05);
 }
 .admin-nav .navbar-nav .nav-item {
   margin-right: 3.5rem;
@@ -802,6 +814,50 @@ body {
   background-color: #fff1d6;
   height: 35px;
   width: 35px;
+}
+#main-content .season-block-header {
+  border-top: 1px solid #e9e9ed;
+}
+#main-content .season-block-header #season-carousel span {
+  display: inline-block;
+  padding: 0.8rem 0;
+}
+#main-content .season-block-header #season-carousel span:first-child {
+  border-bottom: 2px solid #b18fcf;
+}
+#main-content .season-block-header select {
+  width: 16.75rem;
+  background-color: transparent;
+}
+#main-content .season-block-content .card {
+  width: 32%;
+  margin-right: 2%;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.05);
+}
+#main-content .season-block-content .card:last-child {
+  margin-right: 0;
+}
+#main-content .season-block-content .card .card-header,
+#main-content .season-block-content .card .card-footer {
+  border: none;
+}
+#main-content .season-block-content .card .card-body .team-block {
+  border-bottom: 1px solid #e9e9ed;
+  padding: 1rem 1.5rem;
+}
+#main-content .season-block-content .card .card-body .team-block:first-child h5:last-child {
+  margin-right: 3rem;
+}
+#main-content .season-block-content .card .card-body .team-block .team-number {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #978897;
+  color: #fff;
+  border-radius: 50%;
+}
+#main-content .season-block-content .card .card-body .team-block .btn {
+  float: right;
 }
 
 .carousel-inner {
