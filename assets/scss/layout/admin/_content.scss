@@ -96,6 +96,8 @@
     .season-block-header {
         border-top: 1px solid $tile;
         #season-carousel {
+            overflow: hidden;
+            white-space: nowrap;
             span {
                 display: inline-block;
                 padding: 0.8rem 0;
@@ -107,6 +109,7 @@
         select {
             width: 16.75rem;
             background-color: transparent;
+            float: right;
         }
     }
     .season-block-content {

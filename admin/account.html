@@ -43,7 +43,9 @@
     <div id="sidebar">
         <header>
             <a href="index.html"><img src="../assets/img/logo.jpg" id="admin-logo" alt="logo"></a>
-            <label for="cb0"><img src="../assets/img/black-logo.png" width="30" id="admin-small-logo" alt="logo"></label>
+            <label for="cb0">
+                <a href="index.html"><img src="../assets/img/black-logo.png" width="30" id="admin-small-logo" alt="logo"></a>
+            </label>
         </header>
         <!-- Tablet, Mobile Tools Start -->
         <div class="d-lg-none">
@@ -119,7 +121,7 @@
         <div class="navbar-collapse">
             <ul class="navbar-nav me-auto mb-0 align-items-center">
                 <li class="d-lg-none">
-                    <span class="me-2 me-sm-4 d-block"><img src="../assets/img/black-logo.png" width="30" alt="logo"></span>
+                    <a class="me-2 me-sm-4 d-block" href="index.html"><img src="../assets/img/black-logo.png" width="30" alt="logo"></a>
                 </li>
                 <li class="nav-item">
 
@@ -408,8 +410,8 @@
         <div class="bg-white pt-4 px-4">
             <h2 class="HeadlineTitle text-uppercase">Account Management</h2>
             <div class="pb-3">
-                <h4 class="Headline20MediumPositive me-5 d-inline-block">350 Teams</h4>
-                <h5 class="Tablabel me-5 d-inline-block">40 Pro Teams</h5>
+                <h4 class="Headline20MediumPositive me-3 me-sm-5 d-inline-block">350 Teams</h4>
+                <h5 class="Tablabel me-3 me-sm-5 d-inline-block">40 Pro Teams</h5>
                 <h5 class="Tablabel d-inline-block">310 Standard Teams</h5>
             </div>
             <div class="input-group">
@@ -418,29 +420,33 @@
                 </div>
                 <input type="text" class="form-control Tablabel" placeholder="Search for Team name">
             </div>
-            <div class="pb-3">
+            <div class="d-md-flex d-block text-center pb-3">
                 <button class="btn greyBtn me-2">Frequent search term</button>
                 <button class="btn greyBtn me-2">Frequent search term</button>
                 <button class="btn greyBtn me-2">Frequent search term</button>
             </div>
-            <div class="d-flex justify-content-between align-items-end season-block-header pt-2 pb-3">
-                <div id="season-carousel">
-                    <span class="Tablabel me-3">All Seasons</span>
-                    <span class="Tablabel me-3">21-22 Spring Season</span>
-                    <span class="Tablabel me-3">21-22 Summer Season</span>
-                    <span class="Tablabel">21-22 Winter Season</span>
+            <div class="row season-block-header pt-2 pb-3">
+                <div class="col-md-6 mobile-order p-0">
+                    <div id="season-carousel">
+                        <span class="Tablabel me-3">All Seasons</span>
+                        <span class="Tablabel me-3">21-22 Spring Season</span>
+                        <span class="Tablabel me-3">21-22 Summer Season</span>
+                        <span class="Tablabel">21-22 Winter Season</span>
+                    </div>
                 </div>
-                <select class="form-control">
-                    <option value="">Filter by</option>
-                    <option value="spring">Spring Season</option>
-                    <option value="summer">Summer Season</option>
-                    <option value="winter">Winter Season</option>
-                </select>
+                <div class="col-md-6 text-right p-0">
+                    <select class="form-control">
+                        <option value="">Filter by</option>
+                        <option value="spring">Spring Season</option>
+                        <option value="summer">Summer Season</option>
+                        <option value="winter">Winter Season</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="season-block-content">
-            <div class="d-flex justify-content-between align-items-center season-result-title py-4">
-                <div>
+            <div class="d-block text-center d-sm-flex justify-content-between align-items-center season-result-title py-3">
+                <div class="py-2">
                     <h4 class="Headline20MediumPositive me-3 d-inline-block">8U</h4>
                     <h5 class="Tablabel me-3 d-inline-block">3 Pro Teams</h5>
                     <h5 class="Tablabel d-inline-block">12 Standard Teams</h5>
@@ -448,7 +454,7 @@
                 <button type="button" class="btn purpleBtn NavigationOffMobile px-3"><b>Upgrade all 8U teams to Pro</b></button>
             </div>
             <div class="row">
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Spring Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -485,7 +491,7 @@
                         <button type="button" class="btn purpleBtn Tablabel text-white border-radius-25 px-3"><b>Upgrade this season</b></button>
                     </div>
                 </div>
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Summer Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -522,7 +528,7 @@
                         <button type="button" class="btn purpleBtn Tablabel text-white border-radius-25 px-3"><b>Upgrade this season</b></button>
                     </div>
                 </div>
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Winter Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -562,8 +568,8 @@
             </div>
         </div>
         <div class="season-block-content">
-            <div class="d-flex justify-content-between align-items-center season-result-title py-4">
-                <div>
+            <div class="d-block text-center d-sm-flex justify-content-between align-items-center season-result-title py-3">
+                <div class="py-2">
                     <h4 class="Headline20MediumPositive me-3 d-inline-block">10U</h4>
                     <h5 class="Tablabel me-3 d-inline-block">3 Pro Teams</h5>
                     <h5 class="Tablabel d-inline-block">12 Standard Teams</h5>
@@ -571,7 +577,7 @@
                 <button type="button" class="btn purpleBtn NavigationOffMobile px-3"><b>Upgrade all 10U teams to Pro</b></button>
             </div>
             <div class="row">
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Spring Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -608,7 +614,7 @@
                         <button type="button" class="btn purpleBtn Tablabel text-white border-radius-25 px-3"><b>Upgrade this season</b></button>
                     </div>
                 </div>
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Summer Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -645,7 +651,7 @@
                         <button type="button" class="btn purpleBtn Tablabel text-white border-radius-25 px-3"><b>Upgrade this season</b></button>
                     </div>
                 </div>
-                <div class="col-lg-4 card py-4 px-0">
+                <div class="col-lg-4 card py-4 px-0 mb-3">
                     <div class="Tablabel card-header bg-white px-4">21-22 Winter Season</div>
                     <div class="card-body px-0">
                         <div class="team-block d-flex align-items-center justify-content-between">
@@ -688,9 +694,9 @@
     <!-- Main content End -->
 
     <!-- Footer Start -->
-    <footer>
+    <footer class="d-block d-md-flex align-items-center justify-content-between text-center">
         <div>
-            <img src="../assets/img/white-logo.png" class="me-3" alt="logo">
+            <a href="index.html"><img src="../assets/img/white-logo.png" class="me-3" alt="logo"></a>
             <h5 class="Tablabel d-inline-block">© Athlete Tracker LLC 2021. All rights reserved.</h5>
         </div>
         <div>

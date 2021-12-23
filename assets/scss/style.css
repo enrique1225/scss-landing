@@ -734,9 +734,6 @@ body {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: calc(100% - 15.938rem);
   margin-left: 15.938rem;
   padding: 1rem;
@@ -830,6 +827,10 @@ footer {
 #main-content .season-block-header {
   border-top: 1px solid #e9e9ed;
 }
+#main-content .season-block-header #season-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
 #main-content .season-block-header #season-carousel span {
   display: inline-block;
   padding: 0.8rem 0;
@@ -840,6 +841,7 @@ footer {
 #main-content .season-block-header select {
   width: 16.75rem;
   background-color: transparent;
+  float: right;
 }
 #main-content .season-block-content .card {
   width: 32%;
@@ -1303,6 +1305,15 @@ footer {
   color: #494850;
 }
 
+@media (max-width: 1200px) {
+  #main-content .season-block-content .card {
+    width: 49%;
+    margin-right: 2%;
+  }
+  #main-content .season-block-content .card:nth-child(2) {
+    margin-right: 0;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar-light .navbar-nav {
     border-top: 1px solid #EEEEEE;
@@ -1342,9 +1353,26 @@ footer {
   .admin-nav .navbar-nav .nav-item {
     color: #fff;
     margin-right: 0;
+    background-color: transparent !important;
+  }
+  .admin-nav .navbar-nav .nav-item.active a {
+    color: #b18fcf;
+  }
+  .admin-nav .navbar-nav .nav-item a {
+    color: #fff;
+  }
+  .admin-nav .navbar-nav .nav-item a:hover {
+    color: #b18fcf;
+  }
+  .admin-nav .navbar-nav .nav-item label {
+    color: #fff;
+  }
+  .admin-nav .navbar-nav .nav-item label:hover {
+    color: #b18fcf;
   }
 
-  #main-content {
+  #main-content,
+footer {
     width: 100%;
     margin-left: 0;
     padding: 1rem;
@@ -1438,6 +1466,13 @@ footer {
   #main-content .message-block iframe {
     height: 500px;
   }
+  #main-content .season-block-header #season-carousel {
+    width: 300px;
+  }
+  #main-content .season-block-content .card {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 @media (max-width: 576px) {
   .carousel-inner .carousel-container {
@@ -1452,9 +1487,8 @@ footer {
   }
 
   .btn.greyBtn {
-    display: block;
     width: 150px;
-    margin: 20px auto;
+    margin: 20px auto 0;
     text-align: center;
   }
 
@@ -1464,6 +1498,10 @@ footer {
 
   .ClubsTitle {
     font-size: 2.125rem;
+  }
+
+  .HeadlineTitle {
+    font-size: 1.5rem;
   }
 
   .tabset > label {
@@ -1476,6 +1514,12 @@ footer {
 
   #main-content .message-block iframe {
     height: 300px;
+  }
+  #main-content .season-block-header #season-carousel {
+    width: 100%;
+  }
+  #main-content .season-block-header select {
+    width: 100%;
   }
 }
 
