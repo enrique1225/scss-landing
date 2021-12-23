@@ -49,6 +49,22 @@ body {
     }
 }
 
+.btn.greyBtn {
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 3%);
+    background-color: rgba(151, 136, 151, 0.1);
+    font-size: 0.75rem;
+    color: $dark-blue-grey;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    cursor: pointer;
+    img {
+        width: 0.8rem;
+    }
+}
+
 .form-check-input:checked {
     background-color: $pale-purple;
     border-color: $pale-purple;
