@@ -72,6 +72,15 @@
         margin-left: 0;
         padding: 1rem;
     }
+    #main-content {
+        #org-header {
+            .col-lg-6 {
+                &:first-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
     .tablet-bar {
         position: absolute;
         top: 18px;
@@ -171,13 +180,20 @@
         .message-block iframe {
             height: 500px;
         }
-        .season-block-header #season-carousel {
-            width: 300px;
+        .season-block-header {
+            text-align: center;
+            #season-carousel,
+            select {
+                width: 100%;
+            }
         }
         .season-block-content .card {
             width: 100%;
             margin-right: 0;
         }
+    }
+    .mobile-order {
+        order: 1;
     }
 }
 
@@ -208,21 +224,18 @@
     .tabset>label {
         margin: 15px 0.6rem 25px;
     }
-    .mobile-order {
-        order: 1;
-    }
     #main-content {
         .message-block {
             iframe {
                 height: 300px;
             }
         }
-        .season-block-header {
-            #season-carousel {
-                width: 100%;
-            }
-            select {
-                width: 100%;
+        #org-header {
+            ul {
+                width: 200px;
+                margin: auto;
+                text-align: left;
+                margin: 1rem auto;
             }
         }
     }

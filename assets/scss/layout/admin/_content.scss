@@ -150,4 +150,23 @@
             }
         }
     }
+    //... org admin page
+    #org-header {
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.03);
+        background-image: linear-gradient(to top, $black, #331e48);
+        .col-lg-6 {
+            &:first-child {
+                border-right: 1px solid $white;
+            }
+        }
+        ul {
+            margin-bottom: 0;
+            list-style: "\2713";
+            text-indent: 0.5rem;
+            li::marker {
+                color: $pale-purple;
+            }
+        }
+    }
 }
