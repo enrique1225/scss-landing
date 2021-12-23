@@ -559,7 +559,7 @@ body {
   background-color: #10182c;
 }
 #sidebar header {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   height: 4rem;
   position: relative;
   transition: all 0.15s ease-in-out;
@@ -580,7 +580,7 @@ body {
 }
 #sidebar section {
   color: #fff;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   position: relative;
   transition: all 0.15s ease-in-out;
 }
@@ -626,7 +626,7 @@ body {
   transform: rotate(90deg);
 }
 #sidebar h5 {
-  margin: 2rem 0 0.5rem 1rem;
+  margin: 2rem 0 0.5rem 1.5rem;
   color: #f5f1f9;
 }
 
@@ -1284,8 +1284,8 @@ body {
   #hamburger {
     position: absolute;
     color: #f5f1f9;
-    left: 215px;
-    top: 22px;
+    left: 210px;
+    top: 20px;
     z-index: 9999;
     cursor: pointer;
   }
@@ -1300,7 +1300,8 @@ body {
     display: none;
   }
   .hamburger-checked:checked ~ #sidebar {
-    width: 4rem;
+    width: 5rem;
+    text-align: center;
   }
   .hamburger-checked:checked ~ #sidebar header #admin-logo {
     display: none;
@@ -1316,10 +1317,13 @@ body {
 .hamburger-checked:checked ~ #sidebar section .box-content {
     display: none !important;
   }
+  .hamburger-checked:checked ~ #sidebar h5 {
+    margin: 2rem 0 0.5rem;
+  }
   .hamburger-checked:checked ~ #main-content,
 .hamburger-checked:checked ~ .admin-nav {
-    width: calc(100% - 4rem);
-    margin-left: 4rem;
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
   }
 }
 @media (max-width: 768px) {
