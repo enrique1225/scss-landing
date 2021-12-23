@@ -406,6 +406,10 @@ body {
   text-align: right;
 }
 
+.float-right {
+  float: right;
+}
+
 .border-radius-25 {
   border-radius: 25px !important;
 }
@@ -414,7 +418,6 @@ body {
   border-radius: 3px;
 }
 .btn.purpleBtn {
-  min-width: 11.563rem;
   background-color: #b18fcf;
 }
 .btn.purpleBtn:hover {
@@ -891,6 +894,12 @@ footer {
 }
 #main-content #org-header ul li::marker {
   color: #b18fcf;
+}
+#main-content .season-table .season-action {
+  width: 350px;
+}
+#main-content .season-table .season-action p {
+  width: 180px;
 }
 
 .carousel-inner {
