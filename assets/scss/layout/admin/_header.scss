@@ -13,10 +13,15 @@
             label {
                 cursor: pointer;
             }
+            &.active,
             &:hover,
             &:focus {
-                color: $charcoal-grey;
                 background-color: $light;
+            }
+            a {
+                &:hover {
+                    color: $charcoal-grey;
+                }
             }
         }
     }

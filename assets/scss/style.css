@@ -718,9 +718,11 @@ body {
 .admin-nav .navbar-nav .nav-item label {
   cursor: pointer;
 }
-.admin-nav .navbar-nav .nav-item:hover, .admin-nav .navbar-nav .nav-item:focus {
-  color: #494850;
+.admin-nav .navbar-nav .nav-item.active, .admin-nav .navbar-nav .nav-item:hover, .admin-nav .navbar-nav .nav-item:focus {
   background-color: #f5f1f9;
+}
+.admin-nav .navbar-nav .nav-item a:hover {
+  color: #494850;
 }
 .admin-nav .tooltip-container .profile {
   border-radius: 17.5px;
@@ -729,6 +731,16 @@ body {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 50%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 15.938rem);
+  margin-left: 15.938rem;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 #main-content {
