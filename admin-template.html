@@ -116,19 +116,56 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand admin-nav">
-        <div class="navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse">
             <ul class="navbar-nav me-auto mb-0 align-items-center">
-                <li class="nav-item d-lg-none">
+                <li class="d-lg-none">
                     <span class="me-4 d-block"><img src="img/footer-logo.png" width="30" alt="logo"></span>
                 </li>
                 <li class="nav-item">
-                    <span class="nav-link Tablabel p-0">Feed</span>
+
+                    <!-- Feed modal Start -->
+                    <div class="tooltip-container">
+                        <input type="checkbox" class="feed-checked" id="feed-checked" />
+                        <label class="Tablabel" for="feed-checked">Feed</label>
+                        <div class="tooltip" id="feed-tooltip">
+                            <div class="row">
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Type</h5>
+                                    <ul>
+                                        <li><a href="">Feature</a></li>
+                                        <li><a href="">Video</a></li>
+                                        <li><a href="">Game</a></li>
+                                        <li><a href="">Drill</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Hot topics</h5>
+                                    <ul>
+                                        <li><a href="">Most read Feature</a></li>
+                                        <li><a href="">Most watched drill</a></li>
+                                        <li><a href="">Most watched video</a></li>
+                                        <li><a href="">Most watched game</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Sort by</h5>
+                                    <ul>
+                                        <li><a href="">Most recent first</a></li>
+                                        <li><a href="">Most recommented</a></li>
+                                        <li><a href="">Showreel tagged</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feed modal End -->
+                </li>
+
+                <li class="nav-item">
+                    <span class="Tablabel">Milestones</span>
                 </li>
                 <li class="nav-item">
-                    <span class="nav-link Tablabel p-0">Milestones</span>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link Tablabel p-0">Account</span>
+                    <span class="Tablabel">Account</span>
                 </li>
             </ul>
 

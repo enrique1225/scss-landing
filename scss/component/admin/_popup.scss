@@ -1,5 +1,4 @@
 .tooltip-container {
-    position: relative;
     display: inline-block;
     color: $purpley-grey;
     text-align: center;
@@ -54,6 +53,15 @@
             }
         }
     }
+    .feed-checked {
+        display: none;
+        &:checked~ {
+            #feed-tooltip {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
     .tooltip {
         opacity: 0;
         z-index: 99;
@@ -61,7 +69,6 @@
         display: block;
         background-color: $white;
         position: absolute;
-        right: calc(50% - 140px);
         transition: all .2s ease-in-out;
         transform: scale(0);
         header {
@@ -71,7 +78,8 @@
             padding: 2rem 0 0;
         }
         &#notification-tooltip {
-            top: 71px;
+            top: 85px;
+            right: 190px;
             header {
                 padding: 1.5rem 0 2.25rem;
                 .new-notification {
@@ -92,7 +100,8 @@
             }
         }
         &#profile-tooltip {
-            top: 72px;
+            top: 86px;
+            right: 24px;
             header {
                 padding: 1.5rem 0 0.5rem;
                 height: 3.6rem;
@@ -130,7 +139,8 @@
             }
         }
         &#multi-profile-tooltip {
-            top: 72px;
+            top: 86px;
+            right: 24px;
             header {
                 padding: 1rem;
                 height: 3.6rem;
@@ -169,7 +179,7 @@
         }
         &#setting-tooltip {
             top: 49px;
-            right: -16px;
+            right: 0;
             width: 26.563rem;
             background-color: #fbfbfb;
             header {
@@ -196,6 +206,26 @@
                     background-color: $light;
                     width: 1.75rem;
                     height: 1.75rem;
+                }
+            }
+        }
+        &#feed-tooltip {
+            width: 49rem;
+            left: 0;
+            top: 64px;
+            padding: 0;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+            .feed-block {
+                border-right: 1px solid $light;
+                padding: 2rem 0 2rem 2rem;
+                ul {
+                    padding-left: 1rem;
+                    li {
+                        margin: 1.5rem 0;
+                        a {
+                            color: $charcoal-grey;
+                        }
+                    }
                 }
             }
         }
