@@ -1030,6 +1030,10 @@ footer {
   margin: 0;
   color: #b18fcf;
 }
+.carousel-inner .carousel-item .carousel-bg .btn.purpleBtn,
+.carousel-inner .carousel-item .carousel-bg .btn.transparentBtn {
+  min-width: 11.563rem;
+}
 .carousel-inner .carousel-control {
   border-radius: 50%;
   color: #b18fcf;
@@ -1626,6 +1630,9 @@ footer {
 @media (max-width: 576px) {
   .carousel-inner .carousel-container {
     padding: 0;
+  }
+  .carousel-inner .carousel-item .carousel-bg .btn.transparentBtn, .carousel-inner .carousel-item .carousel-bg .btn.purpleBtn {
+    min-width: unset;
   }
 
   .btn.transparentBtn, .btn.purpleBtn {

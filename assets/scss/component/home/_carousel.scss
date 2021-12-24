@@ -39,6 +39,10 @@
                 margin: 0;
                 color: $pale-purple;
             }
+            .btn.purpleBtn,
+            .btn.transparentBtn {
+                min-width: 11.563rem;
+            }
         }
     }
     .carousel-control {

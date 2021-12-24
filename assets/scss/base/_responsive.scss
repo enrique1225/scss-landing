@@ -204,8 +204,18 @@
 }
 
 @media (max-width: 576px) {
-    .carousel-inner .carousel-container {
-        padding: 0;
+    .carousel-inner {
+        .carousel-container {
+            padding: 0;
+        }
+        .carousel-item .carousel-bg {
+            .btn {
+                &.transparentBtn,
+                &.purpleBtn {
+                    min-width: unset;
+                }
+            }
+        }
     }
     .btn {
         &.transparentBtn,
