@@ -101,7 +101,7 @@
             span {
                 display: inline-block;
                 padding: 0.8rem 0;
-                &:first-child {
+                &.active {
                     border-bottom: 2px solid $pale-purple;
                 }
             }

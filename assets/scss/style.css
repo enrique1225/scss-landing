@@ -58,7 +58,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.83px;
+  letter-spacing: -0.83px;
   line-height: normal;
   color: #10182c;
 }
@@ -849,7 +849,7 @@ footer {
   display: inline-block;
   padding: 0.8rem 0;
 }
-#main-content .season-block-header #season-carousel span:first-child {
+#main-content .season-block-header #season-carousel span.active {
   border-bottom: 2px solid #b18fcf;
 }
 #main-content .season-block-header select {
