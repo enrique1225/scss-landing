@@ -1,14 +1,16 @@
-:root {
-    font-size: 16px;
-}
-
 body {
+    font-size: 16px;
     background-color: $dark-blue-grey;
 }
 
 .row {
     margin: 0;
     padding: 0;
+}
+
+a:hover {
+    color: $pale-purple;
+    cursor: pointer;
 }
 
 .bg-dark-blue {
@@ -96,6 +98,13 @@ body {
             min-width: unset;
             width: 3.5rem;
         }
+    }
+    th,
+    td {
+        padding: 0.8rem 1.5rem;
+    }
+    tr {
+        border-bottom: 1px solid $tile;
     }
 }
 

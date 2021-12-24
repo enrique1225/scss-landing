@@ -193,13 +193,6 @@
             .form-check {
                 padding-left: 2.5rem;
             }
-            th,
-            td {
-                padding: 0.8rem 1.5rem;
-            }
-            tr {
-                border-bottom: 1px solid $tile;
-            }
         }
         i {
             font-size: 1.5rem;
@@ -210,11 +203,6 @@
             line-height: 1.5;
         }
     }
-    // .admin-tab {
-    //     input[type="radio"] {
-    //         display: none;
-    //     }
-    // }
 }
 
 //... add new team page
@@ -243,3 +231,5 @@
         background-color: rgba($white, 0.4);
     }
 }
+
+//... profile page

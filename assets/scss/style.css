@@ -385,17 +385,19 @@
   color: #10182c;
 }
 
-:root {
-  font-size: 16px;
-}
-
 body {
+  font-size: 16px;
   background-color: #10182c;
 }
 
 .row {
   margin: 0;
   padding: 0;
+}
+
+a:hover {
+  color: #b18fcf;
+  cursor: pointer;
 }
 
 .bg-dark-blue {
@@ -477,6 +479,13 @@ body {
 .table .btn.successBtn, .table .btn.dangerBtn, .table .btn.primaryBtn {
   min-width: unset;
   width: 3.5rem;
+}
+.table th,
+.table td {
+  padding: 0.8rem 1.5rem;
+}
+.table tr {
+  border-bottom: 1px solid #e9e9ed;
 }
 
 .form-check-input:checked {
@@ -945,13 +954,6 @@ footer {
 #main-content .season-table table .form-check {
   padding-left: 2.5rem;
 }
-#main-content .season-table table th,
-#main-content .season-table table td {
-  padding: 0.8rem 1.5rem;
-}
-#main-content .season-table table tr {
-  border-bottom: 1px solid #e9e9ed;
-}
 #main-content .season-table i {
   font-size: 1.5rem;
 }
@@ -1208,6 +1210,9 @@ footer {
   padding: 5px 9px 5px 11px;
   border-radius: 50%;
 }
+.tooltip-container label {
+  cursor: pointer;
+}
 .tooltip-container .notification-checked {
   display: none;
 }
@@ -1229,13 +1234,6 @@ footer {
   background-color: rgba(151, 136, 151, 0.28);
   border-radius: 20px;
 }
-.tooltip-container .setting-checked {
-  display: none;
-}
-.tooltip-container .setting-checked:checked ~ #setting-tooltip {
-  opacity: 1;
-  transform: scale(1);
-}
 .tooltip-container .profile-setting {
   display: none;
 }
@@ -1246,10 +1244,24 @@ footer {
   opacity: 1;
   transform: scale(1);
 }
+.tooltip-container .setting-checked {
+  display: none;
+}
+.tooltip-container .setting-checked:checked ~ #setting-tooltip {
+  opacity: 1;
+  transform: scale(1);
+}
 .tooltip-container .feed-checked {
   display: none;
 }
 .tooltip-container .feed-checked:checked ~ #feed-tooltip {
+  opacity: 1;
+  transform: scale(1);
+}
+.tooltip-container #action-checked {
+  display: none;
+}
+.tooltip-container #action-checked:checked ~ #action-tooltip {
   opacity: 1;
   transform: scale(1);
 }
@@ -1414,6 +1426,13 @@ footer {
 }
 .tooltip-container .tooltip#feed-tooltip .feed-block ul li a {
   color: #494850;
+}
+.tooltip-container .tooltip#action-tooltip {
+  right: 50px;
+  width: 180px;
+  border-radius: 3px;
+  box-shadow: 0 0 14px 0 rgba(10, 6, 14, 0.1);
+  z-index: 9999;
 }
 
 @media (max-width: 1200px) {

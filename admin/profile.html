@@ -419,9 +419,20 @@
                                 <td class="Tablabel">highland@gmail.com</td>
                                 <td class="Tablabel">alex@gmail.com</td>
                                 <td class="Tablabel text-center">
-                                    <button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button>
+                                    <a type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</a>
                                 </td>
-                                <td class="Tablabel text-center">...</td>
+                                <td class="Tablabel text-center">
+                                    <div class="tooltip-container">
+                                        <input type="checkbox" id="action-checked" />
+                                        <label for="action-checked" class="pb-2">...</label>
+                                        <div class="tooltip py-3 ps-4" id="action-tooltip">
+                                            <a class="Bodymenulabel mb-2 d-inline-block" id="edit-email">Edit email account</a>
+                                            <a class="Bodymenulabel mb-2 d-inline-block" id="edit-parent">Edit parent/carer</a>
+                                            <a class="Bodymenulabel mb-2 d-inline-block" id="make-inactive">Make account inactive</a>
+                                            <a class="Bodymenulabel mb-2 d-inline-block" id="remove-account">Remove account</a>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
