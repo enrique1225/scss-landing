@@ -204,6 +204,34 @@
         .add-team-btn {
             width: 150px;
             height: 40px;
+            line-height: 1.5;
         }
+    }
+}
+
+//... add new team page
+#add-team-check {
+    display: none;
+    &:checked~ {
+        #success-badge {
+            display: flex;
+        }
+    }
+}
+
+#success-badge {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 22rem);
+    margin-left: 19rem;
+    background-color: #dff0d8;
+    position: absolute;
+    top: 100px;
+    i {
+        cursor: pointer;
+        padding: 6px 7px;
+        border-radius: 4px;
+        background-color: rgba($white, 0.4);
     }
 }

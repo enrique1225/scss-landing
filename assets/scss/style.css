@@ -943,6 +943,31 @@ footer {
 #main-content .season-table .add-team-btn {
   width: 150px;
   height: 40px;
+  line-height: 1.5;
+}
+
+#add-team-check {
+  display: none;
+}
+#add-team-check:checked ~ #success-badge {
+  display: flex;
+}
+
+#success-badge {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 22rem);
+  margin-left: 19rem;
+  background-color: #dff0d8;
+  position: absolute;
+  top: 100px;
+}
+#success-badge i {
+  cursor: pointer;
+  padding: 6px 7px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .carousel-inner {
@@ -1485,6 +1510,11 @@ footer {
 
   .tooltip-container .tooltip#feed-tooltip {
     width: 100%;
+  }
+
+  #success-badge {
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
   }
 }
 @media (min-width: 991.98px) {

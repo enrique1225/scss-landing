@@ -119,6 +119,11 @@
             }
         }
     }
+    //... add new team page
+    #success-badge {
+        width: calc(100% - 4rem);
+        margin-left: 2rem;
+    }
 }
 
 @media (min-width: 991.98px) {

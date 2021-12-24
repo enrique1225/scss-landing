@@ -36,8 +36,17 @@
     <label id="tablet-sidebar-open" class="tablet-bar" for="tablet-hamburger-open">
         <img src="../assets/img/hamburger.jpg" width="30" alt="open">
     </label>
-
     <!-- Control sidebar with sidebar&navbar hamburger buttons End -->
+
+    <!-- Success Badge Start -->
+    <input type="checkbox" id="add-team-check" name="add-team-check" />
+    <div class="p-2 p-sm-3" id="success-badge">
+        <span class="Tablabel">Success – team added</span>
+        <label for="add-team-check">
+            <i class="fas fa-times"></i>
+        </label>
+    </div>
+    <!-- Success Badge End -->
 
     <!-- Sidebar Start -->
     <div id="sidebar">
@@ -410,7 +419,7 @@
     <div id="main-content">
         <div class="bg-white pt-4 px-4">
             <h2 class="HeadlineTitle text-uppercase"><b>Add New Team</b></h2>
-            <div class="season-block-header pt-2 pb-3">
+            <div class="season-block-header bottomBorder pt-2">
                 <div id="season-carousel">
                     <span class="Tablabel me-4 me-md-5">New Group</span>
                     <span class="Tablabel me-4 me-md-5 active">8U</span>
@@ -424,7 +433,7 @@
             </div>
         </div>
         <!-- Team Table Start -->
-        <div class="season-table bg-white">
+        <div class="season-table bg-white pt-3">
             <div class="table-responsive">
                 <table class="table mb-0 add-team-table">
                     <thead>
@@ -518,10 +527,12 @@
                     </div>
                 </div>
             </div>
-            <div class="d-block d-md-flex align-items-center p-3">
-                <input class="form-control w-100 me-4" placeholder="Type new team name" />
-                <button class="btn purpleBtn NavigationOffMobile text-uppercase py-2 add-team-btn my-3"><b>add new team</b></button>
-            </div>
+            <form class="d-block d-md-flex align-items-center p-3">
+                <input class="form-control w-100 me-4" placeholder="Type new team name" required/>
+                <label for="add-team-check">
+                    <a type="submit" class="btn purpleBtn NavigationOffMobile text-uppercase pt-2 pb-3 my-3 add-team-btn"><b>add new team</b></a>
+                </label>
+            </form>
         </div>
         <!-- Team Table End -->
     </div>
