@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> My Profile </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../assets/img/favicon.ico" rel="icon">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../assets/scss/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Control sidebar with sidebar&navbar hamburger buttons Start -->
+    <input type="checkbox" class="hamburger-checked" name="accordion" id="cb0" />
+    <label for="cb0" id="hamburger">
+        <img src="../assets/img/hamburger.jpg" alt="close sidebar">
+    </label>
+
+    <input type="checkbox" id="tablet-hamburger-open" />
+    <label id="tablet-sidebar-close" class="tablet-bar" for="tablet-hamburger-open">
+        <img src="../assets/img/close.jpg" width="30" alt="close">
+    </label>
+    <label id="tablet-sidebar-open" class="tablet-bar" for="tablet-hamburger-open">
+        <img src="../assets/img/hamburger.jpg" width="30" alt="open">
+    </label>
+    <!-- Control sidebar with sidebar&navbar hamburger buttons End -->
+
+    <!-- Sidebar Start -->
+    <div id="sidebar">
+        <header>
+            <a href="index.html"><img src="../assets/img/logo.jpg" id="admin-logo" alt="logo"></a>
+            <label for="cb0">
+                <a href="index.html"><img src="../assets/img/black-logo.png" width="30" id="admin-small-logo" alt="logo"></a>
+            </label>
+        </header>
+        <!-- Tablet, Mobile Tools Start -->
+        <div class="d-lg-none">
+            <h5 class="Bodymenulabeldate text-uppercase">tools</h5>
+            <section class="box">
+                <img src="../assets/img/icon-search.svg" alt="search">
+                <span class="box-title Navigationlistlink">Search</span>
+            </section>
+            <section class="box">
+                <img src="../assets/img/icon-alarm.svg" alt="notification">
+                <span class="box-title Navigationlistlink">Notification</span>
+            </section>
+            <section class="box">
+                <img src="../assets/img/icon-quick.svg" alt="actions">
+                <span class="box-title Navigationlistlink">Actions</span>
+            </section>
+            <section class="box">
+                <img src="../assets/img/icon-setting.svg" alt="settings">
+                <span class="box-title Navigationlistlink">Event timeline</span>
+            </section>
+        </div>
+        <!-- Tablet, Mobile Tools End -->
+        <h5 class="Bodymenulabeldate text-uppercase">teams</h5>
+        <input type="checkbox" class="accordion_input" name="accordion" id="cb1" checked />
+        <section class="box">
+            <i class="fas fa-layer-group"></i>
+            <label class="box-title Navigationlistlink hasChild" for="cb1">Member</label>
+            <ul class="box-content">
+                <li><a href="">8U</a></li>
+            </ul>
+        </section>
+        <input type="checkbox" class="accordion_input" name="accordion" id="cb2" />
+        <section class="box">
+            <i class="fas fa-plus-circle"></i>
+            <label class="box-title Navigationlistlink" for="cb2">Request to join new team</label>
+        </section>
+        <h5 class="Bodymenulabeldate text-uppercase">Athletes</h5>
+        <section class="box active">
+            <i class="fas fa-user"></i>
+            <label class="box-title Navigationlistlink" for="cb4">Highland Hills Jaguars</label>
+        </section>
+        <h5 class="Bodymenulabeldate text-uppercase">fees</h5>
+        <input type="checkbox" class="accordion_input" name="accordion" id="cb5" />
+        <section class="box">
+            <a href="account.html"><i class="fas fa-dollar-sign"></i></a>
+            <label class="box-title Navigationlistlink" for="cb5">
+            <a href="account.html">Account types</a>
+        </label>
+        </section>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand admin-nav">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav me-auto mb-0 align-items-center">
+                <li class="d-lg-none">
+                    <a class="me-2 me-sm-4 d-block" href="index.html"><img src="../assets/img/black-logo.png" width="30" alt="logo"></a>
+                </li>
+                <li class="nav-item">
+                    <!-- Feed modal Start -->
+                    <div class="tooltip-container">
+                        <input type="checkbox" class="feed-checked" id="feed-checked" />
+                        <label class="Tablabel" for="feed-checked">Feed</label>
+                        <div class="tooltip" id="feed-tooltip">
+                            <div class="row">
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Type</h5>
+                                    <ul>
+                                        <li><a href="">Feature</a></li>
+                                        <li><a href="">Video</a></li>
+                                        <li><a href="">Game</a></li>
+                                        <li><a href="">Drill</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Hot topics</h5>
+                                    <ul>
+                                        <li><a href="">Most read Feature</a></li>
+                                        <li><a href="">Most watched drill</a></li>
+                                        <li><a href="">Most watched video</a></li>
+                                        <li><a href="">Most watched game</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 feed-block">
+                                    <h5 class="NavigationListtitle">Sort by</h5>
+                                    <ul>
+                                        <li><a href="">Most recent first</a></li>
+                                        <li><a href="">Most recommented</a></li>
+                                        <li><a href="">Showreel tagged</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feed modal End -->
+                </li>
+
+                <li class="nav-item">
+                    <a class="Tablabel" href="">Milestones</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="Tablabel" href="account.html">Account</a>
+                </li>
+            </ul>
+
+            <!-- Desktop icon groups Start-->
+            <div class="d-none align-items-center d-lg-flex">
+                <div class="me-3">
+                    <img class="px-2 py-3" src="../assets/img/icon-search.svg" />
+                    <!-- Notification modal Start -->
+                    <div class="tooltip-container">
+                        <input type="radio" name="header-icon" class="notification-checked" id="notification-checked" />
+                        <label class="header-icon" for="notification-checked">
+                            <img src="../assets/img/icon-alarm.svg" alt="notification">
+                        </label>
+                        <div class="tooltip" id="notification-tooltip">
+                            <header class="text-center position-relative">
+                                <p class="Headline20Medium mb-0">User Notifications</p>
+                                <p class="new-notification Tabstatic mb-0"><span class="notification-count">23</span> new notifications</p>
+                            </header>
+                            <div class="content">
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/coach.svg" class="me-2" alt="Direct coach message">
+                                    <a href="">
+                                        <p class="Bodymenulabeldate mb-0">Direct coach message</p>
+                                        <p class="Bodytimestamp mb-0"><span class="direct-time">2 hrs</span> ago</p>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/content.svg" class="me-2" alt="New feed content">
+                                    <a href="">
+                                        <p class="Bodymenulabeldate mb-0">New feed content</p>
+                                        <p class="Bodytimestamp mb-0"><span class="new-feed">2 hrs</span> ago</p>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/comment.svg" class="me-2" alt="New comment">
+                                    <a href="">
+                                        <p class="Bodymenulabeldate mb-0">New comment</p>
+                                        <p class="Bodytimestamp mb-0"><span class="new-comment">2 hrs</span> ago</p>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/drillme.svg" class="me-2" alt="Drill completion">
+                                    <a href="">
+                                        <p class="Bodymenulabeldate mb-0">Drill completion</p>
+                                        <p class="Bodytimestamp mb-0"><span class="drill-me">2 hrs</span> ago</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="px-2 py-3 me-3" src="../assets/img/icon-quick.svg" />
+                    <!-- Notification modal End -->
+                    <!-- Profile modal Start -->
+                    <div class="tooltip-container me-1">
+                        <input type="radio" name="header-icon" class="profile-checked" id="profile-checked" />
+                        <label class="header-icon" for="profile-checked">
+                            <div class="profile d-inline-block">
+                                <p class="Tablabel d-inline-block mb-0 me-3 user-name">Highland Hills Jaguars</p>
+                                <img src="../assets/img/profile.jpg" id="avatar" alt="profile avatar">
+                            </div>
+                        </label>
+                        <input type="radio" class="profile-setting" name="profile-setting" id="ps">
+                        <!-- User Profile Modal Start -->
+                        <div class="tooltip" id="profile-tooltip">
+                            <header class="position-relative">
+                                <div class="d-flex align-items-center profile-header">
+                                    <img src="../assets/img/profile.jpg" class="me-3" alt="profile avatar">
+                                    <div>
+                                        <p class="Headline20Medium user-name">Beth Bormen</p>
+                                        <p class="user-role Tabstatic mb-0">Club Director</p>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="content">
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/icon-user.svg" class="me-2" alt="My profile">
+                                    <p class="Bodymenulabeldate mb-0">My profile</p>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/icon-bar.svg" class="me-2" alt="Tasks to review">
+                                    <p class="Bodymenulabeldate mb-0">Tasks to review</p>
+                                </div>
+                                <div class="d-flex align-items-center notification">
+                                    <img src="../assets/img/icon-message.svg" class="me-2" alt="Messages">
+                                    <p class="Bodymenulabeldate mb-0">Messages</p>
+                                </div>
+                                <label for="ps">
+                                    <div class="d-flex align-items-center notification">
+                                        <img src="../assets/img/icon-setting.svg" class="me-2" alt="Setting">
+                                        <p class="Bodymenulabeldate mb-0">Settings</p>                                    
+                                    </div>
+                                </label>
+                                <div class="d-flex align-items-center justify-content-between signout">
+                                    <a type="btn" class="btn text-uppercase buttonsmalllabel" href="">sign out</a>
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User Profile Modal End -->
+                        <!-- MultiUser Profile Modal Start -->
+                        <div class="tooltip" id="multi-profile-tooltip">
+                            <header>
+                                <p class="Headline20Medium user-name">Beth Gormen</p>
+                            </header>
+                            <div class="content">
+                                <div class="d-flex align-items-center profile-user">
+                                    <img src="../assets/img/multi-profile.jpg" class="me-2" alt="My another profile">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
+                                        <p class="Bodymenulabeldate mb-0">bgormen@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center profile-user active">
+                                    <img src="../assets/img/profile.jpg" class="me-2" alt="My profile">
+                                    <div>
+                                        <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
+                                        <p class="Bodymenulabeldate mb-0">bgormenjags@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between signout">
+                                    <div>
+                                        <a type="btn" class="btn text-uppercase buttonsmalllabel me-2" href="">change account</a>
+                                        <a type="btn" class="btn text-uppercase buttonsmalllabel" href="">sign out</a>
+                                    </div>
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MultiUser Profile Modal End -->
+                    </div>
+                    <!-- Profile modal End -->
+                    <!-- Timeline modal Start -->
+                    <div class="tooltip-container">
+                        <input type="radio" name="header-icon" class="setting-checked" id="setting-checked" />
+                        <label class="header-icon" for="setting-checked">
+                            <img src="../assets/img/icon-settings.svg" alt="setting">
+                        </label>
+                        <div class="tooltip" id="setting-tooltip">
+                            <header class="p-3 d-flex align-items-center justify-content-between">
+                                <div class="setting-buttons">
+                                    <button type="button" class="btn text-uppercase NavigationOffMobilePositive me-2">notifications</button>
+                                    <button type="button" class="btn text-uppercase NavigationOffMobilePositive">settings</button>
+                                </div>
+                                <a id="setting-close" href=""><i class="fas fa-times"></i></a>
+                            </header>
+                            <div class="content">
+                                <ul class="timeline">
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge success"><img src="../assets/img/icon-content.svg" alt="article"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Feed feture<br>Headline of item</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge danger"><img src="../assets/img/icon-video.svg" alt="video"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Video feture<br>Headline of item</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary"><img src="../assets/img/icon-game.svg" alt="game"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Game recording<br>Headline of item</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge warning"><img src="../assets/img/icon-drill.svg" alt="drill"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Drill sequence</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary"><img src="../assets/img/icon-game.svg" alt="game"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Game recording<br>Headline of item</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge success"><img src="../assets/img/icon-content.svg" alt="article"></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading my-3">
+                                                <h4 class="timeline-title Bodymenulabeldate mb-0 post-date">02:30 PM, February 14 2022</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="Bodymenulabel mb-0">Feed feture<br>Headline of item</p><br>
+                                                <p class="Bodymenulabel mb-0">Available in: $Team name<br>Posted by Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline modal End -->
+                </div>
+            </div>
+            <!-- Desktop icon groups End-->
+
+            <!-- Tablet, Mobile icon groups Start -->
+            <div class="d-lg-none d-flex tablet-profile">
+                <img src="../assets/img/profile.jpg" width="30" class="me-3 rounded-circle" alt="profile avatar">
+            </div>
+            <!-- Tablet, Mobile icon groups End -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main content Start -->
+    <div id="main-content">
+        <div class="bg-white p-4">
+            <h2 class="HeadlineBoldTitle text-uppercase mb-0">Highland Hills Jaguars</h2>
+        </div>
+        <div class="bg-white pt-4 px-4 mt-3">
+            <h4 class="Headline20MediumPositive mb-0">My profile</h4>
+        </div>
+        <div class="bg-white">
+            <!-- Profile Table Start -->
+            <div class="season-table bg-white py-3">
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th class="Tableheading">Image</th>
+                                <th class="Tableheading">Name</th>
+                                <th class="Tableheading">Age</th>
+                                <th class="Tableheading">Account email</th>
+                                <th class="Tableheading">Parent/Carer</th>
+                                <th class="Tableheading text-center">Type</th>
+                                <th class="Tableheading text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="Tablabel">
+                                    <img src="../assets/img/avatar1.jpg" class="rounded-circle" width="24" alt="Jaguars" />
+                                </td>
+                                <td class="Tablabel">Highland Hills Jaguars</td>
+                                <td class="Tablabel">8</td>
+                                <td class="Tablabel">highland@gmail.com</td>
+                                <td class="Tablabel">alex@gmail.com</td>
+                                <td class="Tablabel text-center">
+                                    <button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button>
+                                </td>
+                                <td class="Tablabel text-center">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Profile Table End -->
+        </div>
+        <div class="bg-white pt-4 px-4 mt-3">
+            <h4 class="Headline20MediumPositive mb-0">Display details</h4>
+        </div>
+        <!-- Detail Table Start -->
+        <div class="season-table bg-white py-3">
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th class="Tableheading">Display name/nickname</th>
+                            <th class="Tableheading">Timezone</th>
+                            <th class="Tableheading">Public Highlight</th>
+                            <th class="Tableheading text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="Tablabel">Rob</td>
+                            <td class="Tablabel">MT</td>
+                            <td class="Tablabel">
+                                <button type="button" class="btn dangerBtn buttonsmalllabel text-center">Unavailable</button>
+                            </td>
+                            <td class="Tablabel text-center">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Detail Table End -->
+
+        <!-- Current Teams Tab Start -->
+        <div class="tabset bg-white m-0">
+            <!-- Tab 1 -->
+            <input type="radio" name="tabset" id="tab1" aria-controls="c-team" checked>
+            <label class="Tablabel me-0" for="tab1">Current teams</label>
+            <!-- Tab 2 -->
+            <input type="radio" name="tabset" id="tab2" aria-controls="p-team">
+            <label class="Tablabel me-0" for="tab2">Previous teams</label>
+            <div class="tab-panels">
+                <section id="c-team" class="tab-panel">
+                    <!-- Current Team Table Start -->
+                    <div class="season-table">
+                        <div class="table-responsive">
+                            <table class="table mb-0 add-team-table">
+                                <thead>
+                                    <tr>
+                                        <th class="Tableheading">Team name</th>
+                                        <th class="Tableheading">Season variants</th>
+                                        <th class="Tableheading">Date added to team</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="Tablabel">8U Advanced Black</td>
+                                        <td class="Tablabel">
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Spring</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Summer</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Winter</button>
+                                        </td>
+                                        <td class="Tablabel">February 10, 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Tablabel">8U Advanced Black</td>
+                                        <td class="Tablabel">
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Spring</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Summer</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">21-22 Winter</button>
+                                        </td>
+                                        <td class="Tablabel">February 10, 2021</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Current Team Table End -->
+                </section>
+                <section id="p-team" class="tab-panel">
+                    <!-- Previous Team Table Start -->
+                    <div class="season-table">
+                        <div class="table-responsive">
+                            <table class="table mb-0 add-team-table">
+                                <thead>
+                                    <tr>
+                                        <th class="Tableheading">Team name</th>
+                                        <th class="Tableheading">Season variants</th>
+                                        <th class="Tableheading">Date added to team</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="Tablabel">8U Initial Black</td>
+                                        <td class="Tablabel">
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Spring</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Summer</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Winter</button>
+                                        </td>
+                                        <td class="Tablabel">February 10, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Tablabel">8U Initial Black</td>
+                                        <td class="Tablabel">
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Spring</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Summer</button>
+                                            <button type="button" class="btn greyBtn buttonsmalllabel my-1 text-center">20-21 Winter</button>
+                                        </td>
+                                        <td class="Tablabel">February 8, 2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Previous Team Table End -->
+                </section>
+            </div>
+        </div>
+        <!-- Current Teams Tab End -->
+    </div>
+    <!-- Main content End -->
+
+    <!-- Footer Start -->
+    <footer class="d-block d-md-flex align-items-center justify-content-between text-center">
+        <div>
+            <a href="index.html"><img src="../assets/img/white-logo.png" class="me-3" alt="logo"></a>
+            <h5 class="Tablabel d-inline-block">© Athlete Tracker LLC 2021. All rights reserved.</h5>
+        </div>
+        <div>
+            <a class="Tablabel me-3" href="">About Athlete Tracker</a>
+            <a class="Tablabel" href="">Contact US</a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>

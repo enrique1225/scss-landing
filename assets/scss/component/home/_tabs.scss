@@ -17,7 +17,7 @@
                         >.tab-panel {
                             &:first-child {
                                 display: block;
-                                animation: fadeIn linear 2s;
+                                animation: fadeIn linear 1s;
                             }
                         }
                     }
@@ -31,7 +31,7 @@
                         >.tab-panel {
                             &:nth-child(2) {
                                 display: block;
-                                animation: fadeIn linear 2s;
+                                animation: fadeIn linear 1s;
                             }
                         }
                     }
@@ -45,7 +45,7 @@
                         >.tab-panel {
                             &:nth-child(3) {
                                 display: block;
-                                animation: fadeIn linear 2s;
+                                animation: fadeIn linear 1s;
                             }
                         }
                     }
@@ -59,7 +59,7 @@
                         >.tab-panel {
                             &:nth-child(4) {
                                 display: block;
-                                animation: fadeIn linear 2s;
+                                animation: fadeIn linear 1s;
                             }
                         }
                     }

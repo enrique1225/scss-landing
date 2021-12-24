@@ -63,6 +63,18 @@
   color: #10182c;
 }
 
+.HeadlineBoldTitle {
+  font-family: Barlow;
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.83px;
+  line-height: normal;
+  color: #10182c;
+}
+
 .BarlowMedium {
   font-family: Barlow;
   font-size: 1.75rem;
@@ -438,7 +450,7 @@ body {
   border-radius: 20px;
   background-color: rgba(151, 136, 151, 0.1);
   font-size: 0.75rem;
-  color: #10182c;
+  color: #494850;
   display: inline-block;
   margin: 20px 10px 0 0;
   cursor: pointer;
@@ -935,7 +947,10 @@ footer {
 }
 #main-content .season-table table th,
 #main-content .season-table table td {
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.5rem;
+}
+#main-content .season-table table tr {
+  border-bottom: 1px solid #e9e9ed;
 }
 #main-content .season-table i {
   font-size: 1.5rem;
@@ -1094,19 +1109,19 @@ footer {
 }
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child {
   display: block;
-  animation: fadeIn linear 2s;
+  animation: fadeIn linear 1s;
 }
 .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) {
   display: block;
-  animation: fadeIn linear 2s;
+  animation: fadeIn linear 1s;
 }
 .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3) {
   display: block;
-  animation: fadeIn linear 2s;
+  animation: fadeIn linear 1s;
 }
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4) {
   display: block;
-  animation: fadeIn linear 2s;
+  animation: fadeIn linear 1s;
 }
 .tabset > input:checked + label {
   border-bottom: 2px solid #b18fcf;
@@ -1612,7 +1627,8 @@ footer {
     font-size: 2.125rem;
   }
 
-  .HeadlineTitle {
+  .HeadlineTitle,
+.HeadlineBoldTitle {
     font-size: 1.5rem;
   }
 
