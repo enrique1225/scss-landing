@@ -669,6 +669,7 @@ a:hover {
 #sidebar header #admin-small-logo {
   display: none;
   cursor: pointer;
+  margin: 3px 0 0 0;
 }
 #sidebar header i {
   position: absolute;
