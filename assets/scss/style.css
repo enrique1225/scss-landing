@@ -462,6 +462,11 @@ body {
   min-width: 6.5rem;
 }
 
+.table .btn.successBtn, .table .btn.dangerBtn, .table .btn.primaryBtn {
+  min-width: unset;
+  width: 3.5rem;
+}
+
 .form-check-input:checked {
   background-color: #b18fcf;
   border-color: #b18fcf;
@@ -759,6 +764,7 @@ footer {
 
 #main-content {
   width: calc(100% - 15.938rem);
+  min-height: calc(100vh - 145px);
   margin-left: 15.938rem;
   padding: 1.406rem 1.5rem 1.344rem;
   background-color: #e2e3e5;
@@ -913,6 +919,9 @@ footer {
 #main-content .season-table .season-action p {
   width: 180px;
 }
+#main-content .season-table table.add-team-table .Tablabel {
+  line-height: 2;
+}
 #main-content .season-table table .season-table-number {
   width: 1.5rem;
   height: 1.5rem;
@@ -923,8 +932,16 @@ footer {
 #main-content .season-table table .form-check {
   padding-left: 2.5rem;
 }
+#main-content .season-table table th,
+#main-content .season-table table td {
+  padding: 0.5rem 1.5rem;
+}
 #main-content .season-table i {
   font-size: 1.5rem;
+}
+#main-content .season-table .add-team-btn {
+  width: 150px;
+  height: 40px;
 }
 
 .carousel-inner {
@@ -1528,7 +1545,6 @@ footer {
   }
   #main-content .season-block-header #season-carousel,
 #main-content .season-block-header select {
-    width: 300px;
     float: unset;
     margin: auto;
   }

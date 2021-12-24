@@ -88,6 +88,17 @@ body {
     }
 }
 
+.table {
+    .btn {
+        &.successBtn,
+        &.dangerBtn,
+        &.primaryBtn {
+            min-width: unset;
+            width: 3.5rem;
+        }
+    }
+}
+
 .form-check-input {
     &:checked {
         background-color: $pale-purple;

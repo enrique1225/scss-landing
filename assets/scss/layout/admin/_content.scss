@@ -1,5 +1,6 @@
 #main-content {
     width: calc(100% - 15.938rem);
+    min-height: calc(100vh - 145px);
     margin-left: 15.938rem;
     padding: 1.406rem 1.5rem 1.344rem;
     background-color: $secondary;
@@ -178,6 +179,11 @@
             }
         }
         table {
+            &.add-team-table {
+                .Tablabel {
+                    line-height: 2;
+                }
+            }
             .season-table-number {
                 width: 1.5rem;
                 height: 1.5rem;
@@ -188,9 +194,17 @@
             .form-check {
                 padding-left: 2.5rem;
             }
+            th,
+            td {
+                padding: 0.5rem 1.5rem;
+            }
         }
         i {
             font-size: 1.5rem;
+        }
+        .add-team-btn {
+            width: 150px;
+            height: 40px;
         }
     }
 }
