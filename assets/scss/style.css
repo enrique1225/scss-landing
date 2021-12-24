@@ -528,6 +528,10 @@ body {
   border-left: none;
 }
 
+.bottomBorder {
+  border-bottom: 1px solid #e9e9ed;
+}
+
 .home-nav {
   background-color: #10182c;
 }
@@ -846,9 +850,6 @@ footer {
   background-color: #fff1d6;
   height: 35px;
   width: 35px;
-}
-#main-content .season-block-header {
-  border-top: 1px solid #e9e9ed;
 }
 #main-content .season-block-header #season-carousel {
   overflow: hidden;
