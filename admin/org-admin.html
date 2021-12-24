@@ -86,7 +86,7 @@
         <input type="checkbox" class="accordion_input" name="accordion" id="cb2" />
         <section class="box">
             <i class="fas fa-plus-circle"></i>
-            <label class="box-title Navigationlistlink" for="cb2"><a href="add-team.html">Add new team</a></label>
+            <label class="box-title Navigationlistlink" for="cb2"><a href="add-group.html">Add new team</a></label>
         </section>
         <h5 class="Bodymenulabeldate text-uppercase">users</h5>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb3" />
@@ -283,10 +283,10 @@
                                 </div>
                                 <div class="d-flex align-items-center profile-user active">
                                     <img src="../assets/img/profile.jpg" class="me-2" alt="My profile">
-                                    <div>
+                                    <a href="profile.html">
                                         <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
                                         <p class="Bodymenulabeldate mb-0">bgormenjags@gmail.com</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between signout">
                                     <div>
@@ -492,7 +492,7 @@
                             <th class="Tableheading">Visibility</th>
                             <th class="Tableheading">Date created</th>
                             <th class="Tableheading">Type</th>
-                            <th class="Tableheading">Actions</th>
+                            <th class="Tableheading text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -510,7 +510,19 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">
+                                <div class="tooltip-container">
+                                    <input type="checkbox" class="action-checked" id="action-team-checked" />
+                                    <label for="action-team-checked" class="mb-2">...</label>
+                                    <div class="tooltip py-3 ps-4" id="action-tooltip">
+                                        <a class="Bodymenulabel mb-2 d-block" id="make-inactive">Make team inactive</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="make-active">Make team active</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="upgrade-to-pro">Upgrade to Pro</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="switch-to-standard">Switch to Standard</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="duplicate-team">Duplicate Team(s)</a>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th>
@@ -526,7 +538,7 @@
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -542,7 +554,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -558,7 +570,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -574,7 +586,7 @@
                             <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -582,7 +594,9 @@
             <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
                 <div class="py-2 d-flex align-items-center justify-content-center">
                     <i class="fas fa-plus-circle me-3"></i>
-                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    <a href="add-team.html">
+                        <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    </a>
                 </div>
                 <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
             </div>
@@ -624,7 +638,7 @@
                             <th class="Tableheading">Visibility</th>
                             <th class="Tableheading">Date created</th>
                             <th class="Tableheading">Type</th>
-                            <th class="Tableheading">Actions</th>
+                            <th class="Tableheading text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -642,7 +656,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -658,7 +672,7 @@
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -674,7 +688,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -690,7 +704,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -706,7 +720,7 @@
                             <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -714,7 +728,9 @@
             <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
                 <div class="py-2 d-flex align-items-center justify-content-center">
                     <i class="fas fa-plus-circle me-3"></i>
-                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    <a href="add-team.html">
+                        <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    </a>
                 </div>
                 <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
             </div>
@@ -756,7 +772,7 @@
                             <th class="Tableheading">Visibility</th>
                             <th class="Tableheading">Date created</th>
                             <th class="Tableheading">Type</th>
-                            <th class="Tableheading">Actions</th>
+                            <th class="Tableheading text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -774,7 +790,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Pro</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -790,7 +806,7 @@
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Archived</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -806,7 +822,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -822,7 +838,7 @@
                             <td class="Tablabel"><button type="button" class="btn successBtn buttonsmalllabel text-center">Live</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                         <tr>
                             <th>
@@ -838,7 +854,7 @@
                             <td class="Tablabel"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">Pending</button></td>
                             <td class="Tablabel">February 10, 2021</td>
                             <td class="Tablabel"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">Standard</button></td>
-                            <td class="Tablabel">...</td>
+                            <td class="Tablabel text-center">...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -846,7 +862,9 @@
             <div class="px-4 py-4 d-block d-sm-flex align-items-center justify-content-between text-center">
                 <div class="py-2 d-flex align-items-center justify-content-center">
                     <i class="fas fa-plus-circle me-3"></i>
-                    <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    <a href="add-team.html">
+                        <h5 class="NavigationOn d-inline-block mb-0">Add new 8U team</h5>
+                    </a>
                 </div>
                 <button type="button" class="btn purpleBtn Listchecks px-4 py-1 d-inline-block border-radius-25"><b>Upgrade season to Pro</b></button>
             </div>

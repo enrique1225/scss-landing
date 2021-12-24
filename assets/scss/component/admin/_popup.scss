@@ -71,7 +71,7 @@
         }
     }
     //... my profile page table action popup
-    #action-checked {
+    .action-checked {
         display: none;
         &:checked~ {
             #action-tooltip {

@@ -292,10 +292,10 @@
                                 </div>
                                 <div class="d-flex align-items-center profile-user active">
                                     <img src="../assets/img/profile.jpg" class="me-2" alt="My profile">
-                                    <div>
+                                    <a href="profile.html">
                                         <p class="Bodymenulabeldate mb-1">Beth Gormen</p>
                                         <p class="Bodymenulabeldate mb-0">bgormenjags@gmail.com</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between signout">
                                     <div>
@@ -457,7 +457,20 @@
                             <td class="Tablabel text-center"><button type="button" class="btn primaryBtn buttonsmalllabel text-center">4</button></td>
                             <td class="Tablabel text-center"><button type="button" class="btn successBtn buttonsmalllabel text-center">40</button></td>
                             <td class="Tablabel text-center"><button type="button" class="btn dangerBtn buttonsmalllabel text-center">40</button></td>
-                            <td class="Tablabel text-center">...</td>
+                            <td class="Tablabel text-center">
+                                <div class="tooltip-container">
+                                    <input type="checkbox" class="action-checked" id="action-checked-1" />
+                                    <label for="action-checked-1">...</label>
+                                    <div class="tooltip py-3 ps-4" id="action-tooltip">
+                                        <a class="Bodymenulabel mb-2 d-block" id="invite-code-copy">Invite code copy</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="manage-team">Manage team</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="make-inactive">Make all seasons inactive</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="manage-members">Manage all members</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="add-season">Add new season</a>
+                                        <a class="Bodymenulabel mb-2 d-block" id="duplicate-team">Duplicate teams</a>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="Tablabel">Advanced Orange</td>

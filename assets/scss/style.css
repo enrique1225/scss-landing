@@ -1259,10 +1259,10 @@ footer {
   opacity: 1;
   transform: scale(1);
 }
-.tooltip-container #action-checked {
+.tooltip-container .action-checked {
   display: none;
 }
-.tooltip-container #action-checked:checked ~ #action-tooltip {
+.tooltip-container .action-checked:checked ~ #action-tooltip {
   opacity: 1;
   transform: scale(1);
 }
