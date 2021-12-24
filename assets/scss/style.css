@@ -683,6 +683,9 @@ body {
 #sidebar section .box-content li {
   padding: 0.5rem 0;
 }
+#sidebar section .box-content li a {
+  color: #fff;
+}
 #sidebar section i {
   color: #978897;
   line-height: 2;
