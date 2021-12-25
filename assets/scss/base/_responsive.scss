@@ -159,8 +159,9 @@
                 section {
                     padding-left: 0;
                     text-align: center;
-                    .box-title,
-                    .box-content {
+                    .box-content,
+                    .box-title span,
+                    .box-title.hasChild:before {
                         display: none!important;
                     }
                 }

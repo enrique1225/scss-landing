@@ -41,7 +41,9 @@
     <!-- Sidebar Start -->
     <div id="sidebar">
         <header>
-            <a href="index.html"><img src="../assets/img/logo.jpg" id="admin-logo" alt="logo"></a>
+            <a href="index.html">
+                <img src="../assets/img/logo.jpg" id="admin-logo" alt="logo">
+            </a>
             <label for="cb0">
                 <img src="../assets/img/black-logo.png" width="30" id="admin-small-logo" alt="logo">
             </label>
@@ -68,31 +70,41 @@
         </div>
         <!-- Tablet, Mobile Tools End -->
         <h5 class="Bodymenulabeldate text-uppercase">teams</h5>
-        <input type="checkbox" class="accordion_input" name="accordion" id="cb1" checked />
+        <input type="checkbox" class="accordion_input" name="accordion" id="cb1" checked/>
         <section class="box">
-            <i class="fas fa-layer-group"></i>
-            <label class="box-title Navigationlistlink hasChild" for="cb1">Member</label>
+            <label class="box-title Navigationlistlink hasChild" for="cb1">
+                <a href="org-admin.html">
+                    <i class="fas fa-layer-group me-3"></i>
+                    <span>Member</span>
+                </a>
+            </label>
             <ul class="box-content">
-                <li><a href="org-admin-team.html">8U</a></li>
+                <li><a href="org-admin-team.html" class="NavigationOffMobile">8U</a></li>
             </ul>
         </section>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb2" />
         <section class="box">
-            <i class="fas fa-plus-circle"></i>
-            <label class="box-title Navigationlistlink" for="cb2">Request to join new team</label>
+            <label class="box-title Navigationlistlink" for="cb2">
+                <i class="fas fa-plus-circle me-3"></i>
+                Request to join new team</label>
         </section>
-        <h5 class="Bodymenulabeldate text-uppercase">Athletes</h5>
-        <section class="box active">
-            <i class="fas fa-user"></i>
-            <label class="box-title Navigationlistlink" for="cb4">Highland Hills Jaguars</label>
+        <h5 class="Bodymenulabeldate text-uppercase">athlete</h5>
+        <section class="box">
+
+            <label class="box-title Navigationlistlink active" for="cb2">
+                <i class="fas fa-user me-3"></i> Highland Hills Jaguars
+            
+            </label>
         </section>
         <h5 class="Bodymenulabeldate text-uppercase">fees</h5>
         <input type="checkbox" class="accordion_input" name="accordion" id="cb5" />
         <section class="box">
-            <a href="account.html"><i class="fas fa-dollar-sign"></i></a>
             <label class="box-title Navigationlistlink" for="cb5">
-            <a href="account.html">Account types</a>
-        </label>
+                <a href="account.html">
+                    <i class="fas fa-dollar-sign me-3"></i>
+                    <span>Account types</span>
+                </a>
+            </label>
         </section>
     </div>
     <!-- Sidebar End -->
@@ -260,7 +272,7 @@
                                         <p class="Bodymenulabeldate mb-0">bgormen@gmail.com</p>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center profile-user active">
+                                <div class="d-flex align-items-center profile-user">
                                     <img src="../assets/img/profile.jpg" class="me-2" alt="My profile">
                                     <div>
                                         <p class="Bodymenulabeldate mb-1">Beth Gormen</p>

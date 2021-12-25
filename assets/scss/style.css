@@ -680,7 +680,6 @@ a:hover {
 }
 #sidebar section {
   color: #fff;
-  padding-left: 1.5rem;
   position: relative;
   transition: all 0.15s ease-in-out;
 }
@@ -688,9 +687,13 @@ a:hover {
   background-color: #0a060e;
 }
 #sidebar section .box-title {
-  padding: 0 0.75rem;
+  padding: 0 0 0 1.5rem;
   color: #f5f1f9;
+  width: 100%;
   cursor: pointer;
+}
+#sidebar section .box-title:hover, #sidebar section .box-title.active {
+  background-color: #0a060e;
 }
 #sidebar section .box-title.hasChild:before {
   position: absolute;
@@ -708,14 +711,20 @@ a:hover {
   width: 100%;
   font-size: 0.75rem;
   list-style: none;
-  margin: 0 0 0.5rem;
+  margin: 0;
   display: none;
+  padding-left: 0;
 }
 #sidebar section .box-content li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 3.5rem;
+}
+#sidebar section .box-content li:hover, #sidebar section .box-content li.active {
+  background-color: #0a060e;
 }
 #sidebar section .box-content li a {
   color: #fff;
+  width: 100%;
+  display: inline-block;
 }
 #sidebar section i {
   color: #978897;
@@ -1589,8 +1598,9 @@ footer {
     padding-left: 0;
     text-align: center;
   }
-  .hamburger-checked:checked ~ #sidebar section .box-title,
-.hamburger-checked:checked ~ #sidebar section .box-content {
+  .hamburger-checked:checked ~ #sidebar section .box-content,
+.hamburger-checked:checked ~ #sidebar section .box-title span,
+.hamburger-checked:checked ~ #sidebar section .box-title.hasChild:before {
     display: none !important;
   }
   .hamburger-checked:checked ~ #sidebar h5 {
